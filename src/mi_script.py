@@ -23,3 +23,4 @@ def function_name(arg1: int, arg2: str) -> bool:
         ValueError: When invalid input is provided.
     """
     print("hola")
+    return True

@@ -1,6 +1,6 @@
 site_name: Documentación de mi Proyecto  # Nombre de tu web
-site_url: https://https://naililian.github.io//naililian.github.io/
-repo_url: https://https://naililian.github.io//naililian.github.io
+site_url: https://naililian.github.io/
+repo_url: https://github.com/naililian/naililian.github.io
 
 theme:
   name: material  # El mejor tema para documentación técnica

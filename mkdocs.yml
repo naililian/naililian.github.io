@@ -26,3 +26,5 @@ plugins:
 nav:
   - Inicio: index.md
   - Referencia de API: api.md # Aquí es donde se "rellenará" el código automáticamente
+  - Nodes_Attributes: nodes_attributes.md
+  - Guide: guide.md

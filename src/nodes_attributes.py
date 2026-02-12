@@ -9,7 +9,7 @@ def Hue_Saturation_Attributtes() -> None:
 
     **Tipo de Nodo:** COLOR_CARD
 
-    Keyword| Keyword | Type | Sub-attributes |
+    | Keyword | Type | Sub-attributes |
     |---------|------|-----------------|
     | MasterRangeColor | Attribute |  |
     | GreenRangeColor | Attribute |  |
@@ -33,7 +33,7 @@ def Colour_Card_Attributtes() -> None:
 
     **Tipo de Nodo:** COLOR_CARD
 
-    Keyword| Keyword | Type | Sub-attributes |
+    | Keyword | Type | Sub-attributes |
     |---------|------|-----------------|
     | DEPTH | IntAttr |  |
     | OFFSET_Z | DoubleAttr |  |

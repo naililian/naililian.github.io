@@ -5,7 +5,7 @@ repo_url: https://github.com/naililian/naililian.github.io
 theme:
   name: material  # El mejor tema para documentación técnica
   palette:
-    scheme: slate # Modo oscuro (puedes cambiarlo a 'default' para claro)
+    scheme: default # Modo oscuro (puedes cambiarlo a 'default' para claro)
     primary: indigo
   features:
     - navigation.sections
@@ -25,6 +25,5 @@ plugins:
 
 nav:
   - Inicio: index.md
-  - Referencia de API: api.md # Aquí es donde se "rellenará" el código automáticamente
+  - Utils: api.md # Aquí es donde se "rellenará" el código automáticamente
   - Nodes_Attributes: nodes_attributes.md
-  - Guide: guide.md

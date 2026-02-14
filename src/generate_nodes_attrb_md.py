@@ -62,11 +62,11 @@ def generate_markdown_report(project, output_file="nodes_report.md"):
     # Sort preview names alphabetically
     for preview_name in sorted(nodes_by_preview.keys()):
         # Add heading
-        md_content.append(f"# {preview_name}\n")
+        md_content.append(f"# {preview_name} Node\n")
         
         # Add Node Type line
         node_type = nodes_by_preview[preview_name][0].type
-        md_content.append(f"**Node Type** - {node_type}\n")
+        md_content.append(f"Type: **{node_type}**\n")
         
         # Add table header
         md_content.append("| Level | Parent Keyword | Attribute Type | Attribute Keyword |")

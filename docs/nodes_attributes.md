@@ -1,8 +1,8 @@
 You'll find all the information about nodes attributes.
 
-# Colour-Card
+# Colour-Card Node
 
-**Node Type** - COLOR_CARD
+Type: **COLOR_CARD**
 
 | Level | Parent Keyword | Attribute Type | Attribute Keyword |
 |---|---|---|---|
@@ -17,9 +17,9 @@ You'll find all the information about nodes attributes.
 | Main |  | BoolAttr | INVERT_MATTE_PORT |
 
 
-# Composite
+# Composite Node
 
-**Node Type** - COMPOSITE
+Type: **COMPOSITE**
 
 | Level | Parent Keyword | Attribute Type | Attribute Keyword |
 |---|---|---|---|
@@ -36,9 +36,9 @@ You'll find all the information about nodes attributes.
 | Main |  | BoolAttr | MERGE_VECTOR |
 
 
-# Drawing
+# Drawing Node
 
-**Node Type** - READ
+Type: **READ**
 
 | Level | Parent Keyword | Attribute Type | Attribute Keyword |
 |---|---|---|---|
@@ -142,9 +142,9 @@ You'll find all the information about nodes attributes.
 | Main |  | BoolAttr | INVERT_MATTE_PORT |
 
 
-# Peg
+# Peg Node
 
-**Node Type** - PEG
+Type: **PEG**
 
 | Level | Parent Keyword | Attribute Type | Attribute Keyword |
 |---|---|---|---|
@@ -203,9 +203,9 @@ You'll find all the information about nodes attributes.
 | Main |  | BoolAttr | ADD_COMPOSITE_TO_GROUP |
 
 
-# Write
+# Write Node
 
-**Node Type** - WRITE
+Type: **WRITE**
 
 | Level | Parent Keyword | Attribute Type | Attribute Keyword |
 |---|---|---|---|

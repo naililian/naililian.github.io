@@ -1,0 +1,56 @@
+/* Stronger API-like styling for mkdocstrings output */
+
+.md-typeset .doc.doc-object,
+.md-typeset .doc.doc-contents {
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 0.6rem;
+  padding: 0.8rem 1rem;
+  margin-bottom: 1rem;
+}
+
+.md-typeset .doc.doc-heading {
+  margin-bottom: 0.8rem;
+}
+
+.md-typeset .doc.doc-heading code {
+  font-weight: 700;
+}
+
+.md-typeset h2 {
+  border-bottom: 2px solid var(--md-primary-fg-color);
+  padding-bottom: 0.25rem;
+  margin-top: 1.8rem;
+}
+
+.md-typeset h4 {
+  margin-top: 0.8rem;
+  padding-top: 0.3rem;
+}
+
+.md-typeset table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  border: 1px solid var(--md-default-fg-color--lighter);
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.md-typeset table thead th {
+  background: var(--md-code-bg-color);
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  font-weight: 700;
+}
+
+.md-typeset table th,
+.md-typeset table td {
+  padding: 0.55rem 0.7rem;
+  border-bottom: 1px solid var(--md-default-fg-color--lightest);
+  vertical-align: top;
+}
+
+.md-typeset table tbody tr:last-child td {
+  border-bottom: none;
+}

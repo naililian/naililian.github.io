@@ -23,7 +23,20 @@ plugins:
             show_root_heading: true   # Muestra el nombre del módulo/función
             show_category_heading: true
 
+markdown_extensions:
+  - tables
+  - attr_list
+  - md_in_html
+  - admonition
+  - pymdownx.superfences
+  - toc:
+      permalink: true
+
+extra_css:
+  - stylesheets/api-docs.css
+
 nav:
   - Inicio: index.md
   - Utils: api.md # Aquí es donde se "rellenará" el código automáticamente
   - Nodes_Attributes: nodes_attributes.md
+  - Nodes_Report: nodes_report.md

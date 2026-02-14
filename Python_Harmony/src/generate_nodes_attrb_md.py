@@ -58,14 +58,14 @@ def generate_markdown_report(project, output_file="nodes_report.md"):
     
     # Sort preview names alphabetically
     sorted_names = sorted(nodes_by_preview.keys())
-    
 
+    md_content.append("# Nodes Attributes\n")
     md_content.append("You'll find all the information about nodes attributes.\n")
     
     # Generate content sections
     for preview_name in sorted_names:
         # Add heading
-        md_content.append(f"# {preview_name} Node\n")
+        md_content.append(f"## {preview_name} Node\n")
         
         # Add Node Type line
         node_type = nodes_by_preview[preview_name][0].type

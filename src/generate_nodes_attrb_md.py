@@ -12,7 +12,7 @@ harmony.open_project(nodes_data_scn)
 current_session = harmony.session()                                  
 project = current_session.project
 nodes = project.scene.nodes         
-                           
+
 print( "Current Project: %s"%(project.project_path) )
 
 def extract_preview_name(attr_str):
@@ -31,11 +31,14 @@ def extract_type_and_keyword(attr_str):
     
     return attr_type, keyword
 
-def generate_markdown_report(project, output_file="nodes_report.md"):
-    """Generate markdown report of all nodes and their attributes."""
+def generate_markdown_report(project, output_file="nodes_attributes.md"):
+    """Generate markdown report of all nodes and their attributes, sorted by preview name."""
     
     md_content = []
     nodes = project.scene.nodes
+    
+    # Group nodes by preview name
+    nodes_by_preview = {}
     
     for node in nodes:
         node_type = node.type
@@ -44,10 +47,17 @@ def generate_markdown_report(project, output_file="nodes_report.md"):
         if not node.attributes:
             continue
         
-        # Use the preview name from the first attribute as section heading
+        # Extract preview name from the first attribute
         first_attr = node.attributes[0]
         preview_name = extract_preview_name(first_attr)
         
+        if preview_name not in nodes_by_preview:
+            nodes_by_preview[preview_name] = []
+        
+        nodes_by_preview[preview_name].append(node)
+    
+    # Sort preview names alphabetically
+    for preview_name in sorted(nodes_by_preview.keys()):
         # Add heading
         md_content.append(f"# {preview_name}\n")
         
@@ -55,16 +65,17 @@ def generate_markdown_report(project, output_file="nodes_report.md"):
         md_content.append("| Level | Parent Keyword | Attribute Type | Attribute Keyword |")
         md_content.append("|---|---|---|---|")
         
-        # Process main attributes
-        for attribute in node.attributes:
-            attr_type, keyword = extract_type_and_keyword(attribute)
-            md_content.append(f"| Main |  | {attr_type} | {keyword} |")
-            
-            # Process sub-attributes
-            if attribute.subattributes:
-                for subattr in attribute.subattributes:
-                    sub_type, sub_keyword = extract_type_and_keyword(subattr)
-                    md_content.append(f"| Sub | {keyword} | {sub_type} | {sub_keyword} |")
+        # Process all nodes with this preview name
+        for node in nodes_by_preview[preview_name]:
+            for attribute in node.attributes:
+                attr_type, keyword = extract_type_and_keyword(attribute)
+                md_content.append(f"| Main |  | {attr_type} | {keyword} |")
+                
+                # Process sub-attributes
+                if attribute.subattributes:
+                    for subattr in attribute.subattributes:
+                        sub_type, sub_keyword = extract_type_and_keyword(subattr)
+                        md_content.append(f"| Sub | {keyword} | {sub_type} | {sub_keyword} |")
         
         md_content.append("\n")
     
@@ -76,4 +87,4 @@ def generate_markdown_report(project, output_file="nodes_report.md"):
     print(f"Report generated: {output_path.absolute()}")
 
 # Call it after get_attributes()
-generate_markdown_report(project, output_file="E:/Scripts/PY_HARMONY_DATA/nodes_report.md")
+generate_markdown_report(project, output_file="E:/Scripts/GITHUB_REPO/naililian.github.io/src/nodes_attributes.md")

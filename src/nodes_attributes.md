@@ -30,33 +30,6 @@
 | Main |  | BoolAttr | MERGE_VECTOR |
 
 
-# Write
-
-| Level | Parent Keyword | Attribute Type | Attribute Keyword |
-|---|---|---|---|
-| Main |  | EnumAttr | EXPORT_TO_MOVIE |
-| Main |  | TextAttr | DRAWING_NAME |
-| Main |  | TextAttr | MOVIE_PATH |
-| Main |  | TextAttr | MOVIE_FORMAT |
-| Main |  | TextAttr | MOVIE_AUDIO |
-| Main |  | TextAttr | MOVIE_VIDEO |
-| Main |  | TextAttr | MOVIE_VIDEOAUDIO |
-| Main |  | IntAttr | LEADING_ZEROS |
-| Main |  | IntAttr | START |
-| Main |  | TextAttr | DRAWING_TYPE |
-| Main |  | Attribute | ENABLING |
-| Sub | ENABLING | EnumAttr | ENABLING.FILTER |
-| Sub | ENABLING | TextAttr | ENABLING.FILTER_NAME |
-| Sub | ENABLING | IntAttr | ENABLING.FILTER_RES_X |
-| Sub | ENABLING | IntAttr | ENABLING.FILTER_RES_Y |
-| Main |  | BoolAttr | SCRIPT_MOVIE |
-| Main |  | TextAttr | SCRIPT_EDITOR |
-| Main |  | TextAttr | COLOR_SPACE |
-| Main |  | EnumAttr | COMPOSITE_PARTITIONING |
-| Main |  | DoubleAttr | Z_PARTITION_RANGE |
-| Main |  | BoolAttr | CLEAN_UP_PARTITION_FOLDERS |
-
-
 # Drawing
 
 | Level | Parent Keyword | Attribute Type | Attribute Keyword |
@@ -218,4 +191,31 @@
 | Main |  | DoubleAttr | IK_STIFFNESS |
 | Main |  | BoolAttr | GROUP_AT_NETWORK_BUILDING |
 | Main |  | BoolAttr | ADD_COMPOSITE_TO_GROUP |
+
+
+# Write
+
+| Level | Parent Keyword | Attribute Type | Attribute Keyword |
+|---|---|---|---|
+| Main |  | EnumAttr | EXPORT_TO_MOVIE |
+| Main |  | TextAttr | DRAWING_NAME |
+| Main |  | TextAttr | MOVIE_PATH |
+| Main |  | TextAttr | MOVIE_FORMAT |
+| Main |  | TextAttr | MOVIE_AUDIO |
+| Main |  | TextAttr | MOVIE_VIDEO |
+| Main |  | TextAttr | MOVIE_VIDEOAUDIO |
+| Main |  | IntAttr | LEADING_ZEROS |
+| Main |  | IntAttr | START |
+| Main |  | TextAttr | DRAWING_TYPE |
+| Main |  | Attribute | ENABLING |
+| Sub | ENABLING | EnumAttr | ENABLING.FILTER |
+| Sub | ENABLING | TextAttr | ENABLING.FILTER_NAME |
+| Sub | ENABLING | IntAttr | ENABLING.FILTER_RES_X |
+| Sub | ENABLING | IntAttr | ENABLING.FILTER_RES_Y |
+| Main |  | BoolAttr | SCRIPT_MOVIE |
+| Main |  | TextAttr | SCRIPT_EDITOR |
+| Main |  | TextAttr | COLOR_SPACE |
+| Main |  | EnumAttr | COMPOSITE_PARTITIONING |
+| Main |  | DoubleAttr | Z_PARTITION_RANGE |
+| Main |  | BoolAttr | CLEAN_UP_PARTITION_FOLDERS |
 

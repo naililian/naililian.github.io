@@ -2,12 +2,8 @@
 
 ## Hue Saturation
 
-::: nodes_attributes.Hue_Saturation_Attributtes
-		options:
-			show_source: false
+Content coming soon.
 
 ## Colour Card
 
-::: nodes_attributes.Colour_Card_Attributtes
-		options:
-			show_source: false
+Content coming soon.

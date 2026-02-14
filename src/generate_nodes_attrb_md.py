@@ -87,4 +87,4 @@ def generate_markdown_report(project, output_file="nodes_attributes.md"):
     print(f"Report generated: {output_path.absolute()}")
 
 # Call it after get_attributes()
-generate_markdown_report(project, output_file="E:/Scripts/GITHUB_REPO/naililian.github.io/src/nodes_attributes.md")
+generate_markdown_report(project, output_file="E:/Scripts/GITHUB_REPO/naililian.github.io/docs/nodes_attributes.md")

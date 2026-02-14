@@ -1,3 +1,14 @@
+<nav style="float: right; background: #f5f5f5; padding: 20px; margin: 0 0 20px 20px; border-radius: 5px; width: 250px;">
+<h3>Contents</h3>
+<ul>
+  <li><a href="#colour-card">Colour-Card</a></li>
+  <li><a href="#composite">Composite</a></li>
+  <li><a href="#drawing">Drawing</a></li>
+  <li><a href="#peg">Peg</a></li>
+  <li><a href="#write">Write</a></li>
+</ul>
+</nav>
+
 You'll find all the information about nodes attributes.
 
 # Colour-Card Node

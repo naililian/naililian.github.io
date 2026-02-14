@@ -32,8 +32,12 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Build site
+      - name: Build main site
         run: mkdocs build --clean
+
+      - name: Build Python_Harmony site
+        working-directory: ./Python_Harmony
+        run: mkdocs build --site-dir ../site/python-harmony/
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3

@@ -38,4 +38,4 @@ extra_css:
 nav:
   - Inicio: index.md
   - Utils: api.md # Aquí es donde se "rellenará" el código automáticamente
-  - Nodes_Attributes: nodes_attributes.md
+  - Python Harmony: https://naililian.github.io/python-harmony/

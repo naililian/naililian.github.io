@@ -9,9 +9,7 @@ theme:
     primary: indigo
   features:
     - navigation.sections
-    - navigation.indexes
     - content.code.copy
-    - toc.integrate
 
 plugins:
   - search

@@ -59,17 +59,7 @@ def generate_markdown_report(project, output_file="nodes_report.md"):
     # Sort preview names alphabetically
     sorted_names = sorted(nodes_by_preview.keys())
     
-    # Generate sidebar HTML
-    sidebar = '<nav style="float: right; background: #f5f5f5; padding: 20px; margin: 0 0 20px 20px; border-radius: 5px; width: 250px; position: sticky; top: 20px;">\n'
-    sidebar += '<h3>Node Types</h3>\n'
-    sidebar += '<ul>\n'
-    for name in sorted_names:
-        anchor = name.lower().replace(' ', '-')
-        sidebar += f'  <li><a href="#{anchor}">{name}</a></li>\n'
-    sidebar += '</ul>\n'
-    sidebar += '</nav>\n'
 
-    md_content.append(sidebar)
     md_content.append("You'll find all the information about nodes attributes.\n")
     
     # Generate content sections

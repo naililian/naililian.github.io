@@ -31,11 +31,14 @@ def extract_type_and_keyword(attr_str):
     
     return attr_type, keyword
 
-def generate_markdown_report(project, output_file="nodes_attributes.md"):
+def generate_markdown_report(project, output_file="nodes_report.md"):
     """Generate markdown report of all nodes and their attributes, sorted by preview name."""
     
     md_content = []
     nodes = project.scene.nodes
+    
+    # Add intro phrase at the top
+    md_content.append("You'll find all the information about nodes attributes.\n")
     
     # Group nodes by preview name
     nodes_by_preview = {}
@@ -60,6 +63,10 @@ def generate_markdown_report(project, output_file="nodes_attributes.md"):
     for preview_name in sorted(nodes_by_preview.keys()):
         # Add heading
         md_content.append(f"# {preview_name}\n")
+        
+        # Add Node Type line
+        node_type = nodes_by_preview[preview_name][0].type
+        md_content.append(f"**Node Type** - {node_type}\n")
         
         # Add table header
         md_content.append("| Level | Parent Keyword | Attribute Type | Attribute Keyword |")

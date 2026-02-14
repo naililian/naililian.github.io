@@ -1,4 +1,8 @@
+You'll find all the information about nodes attributes.
+
 # Colour-Card
+
+**Node Type** - COLOR_CARD
 
 | Level | Parent Keyword | Attribute Type | Attribute Keyword |
 |---|---|---|---|
@@ -14,6 +18,8 @@
 
 
 # Composite
+
+**Node Type** - COMPOSITE
 
 | Level | Parent Keyword | Attribute Type | Attribute Keyword |
 |---|---|---|---|
@@ -31,6 +37,8 @@
 
 
 # Drawing
+
+**Node Type** - READ
 
 | Level | Parent Keyword | Attribute Type | Attribute Keyword |
 |---|---|---|---|
@@ -136,6 +144,8 @@
 
 # Peg
 
+**Node Type** - PEG
+
 | Level | Parent Keyword | Attribute Type | Attribute Keyword |
 |---|---|---|---|
 | Main |  | BoolAttr | ENABLE_3D |
@@ -194,6 +204,8 @@
 
 
 # Write
+
+**Node Type** - WRITE
 
 | Level | Parent Keyword | Attribute Type | Attribute Keyword |
 |---|---|---|---|

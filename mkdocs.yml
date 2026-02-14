@@ -10,6 +10,7 @@ theme:
   features:
     - navigation.sections
     - content.code.copy # Permite copiar código con un clic
+    - toc.integrate  # Sidebar with table of contents
 
 plugins:
   - search

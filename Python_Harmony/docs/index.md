@@ -6,4 +6,10 @@ Welcome to the Python Harmony project documentation.
 
 - **[Nodes Attributes](nodes_attributes.md)** - Complete reference of all Toon Boom Harmony node types and their attributes
 
-This documentation is automatically generated from Harmony scene data.
+- **[Actions](actions.md)** - All the actions and responder avalaible in Harmony
+
+
+
+
+
+This documentation is automatically created for Harmony 25.1

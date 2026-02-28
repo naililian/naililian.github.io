@@ -2430,67 +2430,6 @@ Type: **PEG**
 | Main |  | BoolAttr | ADD_COMPOSITE_TO_GROUP |
 
 
-## Peg_1 Node
-
-Type: **PEG**
-
-| Level | Parent Keyword | Attribute Type | Attribute Keyword |
-|---|---|---|---|
-| Main |  | BoolAttr | ENABLE_3D |
-| Main |  | BoolAttr | FACE_CAMERA |
-| Main |  | EnumAttr | CAMERA_ALIGNMENT |
-| Main |  | Pos3DAttr | POSITION |
-| Sub | POSITION | BoolAttr | POSITION/SEPARATE |
-| Sub | POSITION | DoubleAttr | POSITION.X |
-| Sub | POSITION | DoubleAttr | POSITION.Y |
-| Sub | POSITION | DoubleAttr | POSITION.Z |
-| Sub | POSITION | Attribute | POSITION.3DPATH |
-| Main |  | Attribute | SCALE |
-| Sub | SCALE | BoolAttr | SCALE/SEPARATE |
-| Sub | SCALE | BoolAttr | SCALE/IN_FIELDS |
-| Sub | SCALE | DoubleAttr | SCALE.XY |
-| Sub | SCALE | DoubleAttr | SCALE.X |
-| Sub | SCALE | DoubleAttr | SCALE.Y |
-| Sub | SCALE | DoubleAttr | SCALE.Z |
-| Main |  | Attribute | ROTATION |
-| Sub | ROTATION | BoolAttr | ROTATION/SEPARATE |
-| Sub | ROTATION | DoubleAttr | ROTATION.ANGLEX |
-| Sub | ROTATION | DoubleAttr | ROTATION.ANGLEY |
-| Sub | ROTATION | DoubleAttr | ROTATION.ANGLEZ |
-| Sub | ROTATION | Attribute | ROTATION.QUATERNIONPATH |
-| Main |  | Attribute | ANGLE |
-| Main |  | DoubleAttr | SKEW |
-| Main |  | Pos3DAttr | PIVOT |
-| Sub | PIVOT | BoolAttr | PIVOT/SEPARATE |
-| Sub | PIVOT | DoubleAttr | PIVOT.X |
-| Sub | PIVOT | DoubleAttr | PIVOT.Y |
-| Sub | PIVOT | DoubleAttr | PIVOT.Z |
-| Main |  | Pos3DAttr | SPLINE_OFFSET |
-| Sub | SPLINE_OFFSET | BoolAttr | SPLINE_OFFSET/SEPARATE |
-| Sub | SPLINE_OFFSET | DoubleAttr | SPLINE_OFFSET.X |
-| Sub | SPLINE_OFFSET | DoubleAttr | SPLINE_OFFSET.Y |
-| Sub | SPLINE_OFFSET | DoubleAttr | SPLINE_OFFSET.Z |
-| Main |  | BoolAttr | IGNORE_PARENT_PEG_SCALING |
-| Main |  | BoolAttr | DISABLE_FIELD_RENDERING |
-| Main |  | IntAttr | DEPTH |
-| Main |  | BoolAttr | ENABLE_MIN_MAX_ANGLE |
-| Main |  | DoubleAttr | MIN_ANGLE |
-| Main |  | DoubleAttr | MAX_ANGLE |
-| Main |  | BoolAttr | NAIL_FOR_CHILDREN |
-| Main |  | BoolAttr | IK_HOLD_ORIENTATION |
-| Main |  | BoolAttr | IK_HOLD_X |
-| Main |  | BoolAttr | IK_HOLD_Y |
-| Main |  | BoolAttr | IK_EXCLUDED |
-| Main |  | BoolAttr | IK_CAN_ROTATE |
-| Main |  | BoolAttr | IK_CAN_TRANSLATE_X |
-| Main |  | BoolAttr | IK_CAN_TRANSLATE_Y |
-| Main |  | DoubleAttr | IK_BONE_X |
-| Main |  | DoubleAttr | IK_BONE_Y |
-| Main |  | DoubleAttr | IK_STIFFNESS |
-| Main |  | BoolAttr | GROUP_AT_NETWORK_BUILDING |
-| Main |  | BoolAttr | ADD_COMPOSITE_TO_GROUP |
-
-
 ## Pixelate Node
 
 Type: **PIXELATE**

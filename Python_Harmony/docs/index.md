@@ -12,5 +12,4 @@ Welcome to the Python Harmony project documentation.
 
 
 
-
-This documentation is automatically created for Harmony 25.1
+This documentation is automatically created from Harmony 25.1

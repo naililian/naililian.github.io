@@ -39,4 +39,5 @@ extra_css:
 nav:
   - Home: index.md
   - Nodes Attributes: nodes_attributes.md
+  - Nodes Types: nodes_types.md
   - Actions: actions.md

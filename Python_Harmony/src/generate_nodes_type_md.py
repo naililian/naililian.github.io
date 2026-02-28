@@ -57,7 +57,9 @@ def generate_nodes_types_md(project, output_file="nodes_types.md"):
     # Add rows for each node
     for preview_name in sorted_names:
         node_type = nodes_by_preview[preview_name]
-        md_content.append(f"| {preview_name} | {node_type} |")
+        # Create anchor link to nodes_attributes.md
+        anchor = preview_name.lower().replace(' ', '-').replace('_', '-')
+        md_content.append(f"| [{preview_name}](nodes_attributes.md#{anchor}-node) | {node_type} |")
     
     md_content.append("\n")
     

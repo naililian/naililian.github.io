@@ -36,6 +36,7 @@ List of all available nodes and their types.
 | [Colour-Curves](nodes_attributes.md#colour-curves-node) | COLOR_CURVES |
 | [Colour-Fade](nodes_attributes.md#colour-fade-node) | COLOR_FADE |
 | [Colour-Levels](nodes_attributes.md#colour-levels-node) | COLOR_LEVELS |
+| [Colour-Override] | COLOR_OVERRIDE_TVG |
 | [Colour-Scale](nodes_attributes.md#colour-scale-node) | COLOR_SCALE |
 | [Colour-Selector](nodes_attributes.md#colour-selector-node) | TbdColorSelector |
 | [Composite](nodes_attributes.md#composite-node) | COMPOSITE |

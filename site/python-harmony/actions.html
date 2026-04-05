@@ -1,0 +1,4144 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://naililian.github.io/python-harmony/actions.html">
+      
+      
+        <link rel="prev" href="nodes_types.html">
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
+    
+    
+      
+        <title>Actions - Python Harmony Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="assets/_mkdocstrings.css">
+    
+      <link rel="stylesheet" href="stylesheets/custom.css">
+    
+    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#actions" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="index.html" title="Python Harmony Documentation" class="md-header__button md-logo" aria-label="Python Harmony Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Python Harmony Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Actions
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/naililian/naililian.github.io" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="index.html" title="Python Harmony Documentation" class="md-nav__button md-logo" aria-label="Python Harmony Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Python Harmony Documentation
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/naililian/naililian.github.io" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="nodes_attributes.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Nodes Attributes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="nodes_types.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Nodes Types
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Actions
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="actions.html" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Actions
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#animio_filemenuresponder" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AnimIO_FileMenuResponder
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#creativedrawingtoolsresponder" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CreativeDrawingToolsResponder
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exportgifresponder" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ExportGifResponder
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exposurefillresponder" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ExposureFillResponder
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mattegeneratorresponder" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        MatteGeneratorResponder
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#node-view" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Node View
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#particlecoreguiresponder" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ParticleCoreGuiResponder
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pluginhelpviewresponder" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        PluginHelpViewResponder
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#scriptviewresponder" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ScriptViewResponder
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#shiftandtracetoolresponder" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ShiftAndTraceToolResponder
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#artlayerresponder" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        artLayerResponder
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cameraview" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        cameraView
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#coloroperationsresponder" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        colorOperationsResponder
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#drawingview" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        drawingView
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exportcoreresponder" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        exportCoreResponder
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#graph3dresponder" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        graph3dresponder
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ikresponder" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ikResponder
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#libraryview" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        libraryView
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#minipegmoduleresponder" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        miniPegModuleResponder
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modulelibraryview" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        moduleLibraryView
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#moduleresponder" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        moduleResponder
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#onionskinresponder" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        onionSkinResponder
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#opacitypanel" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        opacityPanel
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pencilpanel" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        pencilPanel
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#scene" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        scene
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sceneui" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        sceneUI
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#scriptresponder" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        scriptResponder
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sessionresponder" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        sessionResponder
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#texturepanel" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        texturePanel
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#timelineview" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        timelineView
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#toolproperties" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        toolProperties
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#xsheetview" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        xsheetView
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#animio_filemenuresponder" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AnimIO_FileMenuResponder
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#creativedrawingtoolsresponder" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CreativeDrawingToolsResponder
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exportgifresponder" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ExportGifResponder
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exposurefillresponder" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ExposureFillResponder
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mattegeneratorresponder" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        MatteGeneratorResponder
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#node-view" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Node View
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#particlecoreguiresponder" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ParticleCoreGuiResponder
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pluginhelpviewresponder" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        PluginHelpViewResponder
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#scriptviewresponder" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ScriptViewResponder
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#shiftandtracetoolresponder" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ShiftAndTraceToolResponder
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#artlayerresponder" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        artLayerResponder
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cameraview" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        cameraView
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#coloroperationsresponder" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        colorOperationsResponder
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#drawingview" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        drawingView
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exportcoreresponder" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        exportCoreResponder
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#graph3dresponder" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        graph3dresponder
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ikresponder" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ikResponder
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#libraryview" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        libraryView
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#minipegmoduleresponder" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        miniPegModuleResponder
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modulelibraryview" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        moduleLibraryView
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#moduleresponder" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        moduleResponder
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#onionskinresponder" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        onionSkinResponder
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#opacitypanel" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        opacityPanel
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pencilpanel" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        pencilPanel
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#scene" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        scene
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sceneui" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        sceneUI
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#scriptresponder" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        scriptResponder
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sessionresponder" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        sessionResponder
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#texturepanel" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        texturePanel
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#timelineview" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        timelineView
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#toolproperties" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        toolProperties
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#xsheetview" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        xsheetView
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="actions">Actions<a class="headerlink" href="#actions" title="Permanent link">&para;</a></h1>
+<p>You'll find all the information about Harmony actions organized by responder.</p>
+<div class="admonition info">
+<p class="admonition-title">GUI Interaction</p>
+<p>Actions are GUI commands that can be triggered through Harmony's interface.</p>
+<p>They correspond to menu items, toolbar buttons, and keyboard shortcuts.</p>
+</div>
+<h2 id="animio_filemenuresponder">AnimIO_FileMenuResponder<a class="headerlink" href="#animio_filemenuresponder" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Action</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>onActionExportTransformations()</code></td>
+</tr>
+<tr>
+<td><code>onActionImportTransformations()</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="creativedrawingtoolsresponder">CreativeDrawingToolsResponder<a class="headerlink" href="#creativedrawingtoolsresponder" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Action</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>onActionPencilLineCreateTexture()</code></td>
+</tr>
+<tr>
+<td><code>onActionPencilLineWiggle()</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="exportgifresponder">ExportGifResponder<a class="headerlink" href="#exportgifresponder" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Action</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>onActionExportGif()</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="exposurefillresponder">ExposureFillResponder<a class="headerlink" href="#exposurefillresponder" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Action</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>onActionExposureFillUsingRenderChange()</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="mattegeneratorresponder">MatteGeneratorResponder<a class="headerlink" href="#mattegeneratorresponder" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Action</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>onActionAlignMatteHandles()</code></td>
+</tr>
+<tr>
+<td><code>onActionDefineResourceFolder()</code></td>
+</tr>
+<tr>
+<td><code>onActionEnableAddHintMode()</code></td>
+</tr>
+<tr>
+<td><code>onActionEnableAddVertexMode()</code></td>
+</tr>
+<tr>
+<td><code>onActionEnableNormalMode()</code></td>
+</tr>
+<tr>
+<td><code>onActionEnableSetupMode()</code></td>
+</tr>
+<tr>
+<td><code>onActionExpandInnerContour()</code></td>
+</tr>
+<tr>
+<td><code>onActionExpandOuterContour()</code></td>
+</tr>
+<tr>
+<td><code>onActionExportResourceFolder()</code></td>
+</tr>
+<tr>
+<td><code>onActionGenerateHints()</code></td>
+</tr>
+<tr>
+<td><code>onActionGenerateMatte()</code></td>
+</tr>
+<tr>
+<td><code>onActionMakeMatteVerticesAnimatable()</code></td>
+</tr>
+<tr>
+<td><code>onActionMergeInnerOuterContours()</code></td>
+</tr>
+<tr>
+<td><code>onActionNull()</code></td>
+</tr>
+<tr>
+<td><code>onActionNullAddHint()</code></td>
+</tr>
+<tr>
+<td><code>onActionReduceInnerContour()</code></td>
+</tr>
+<tr>
+<td><code>onActionReduceOuterContour()</code></td>
+</tr>
+<tr>
+<td><code>onActionReloadView()</code></td>
+</tr>
+<tr>
+<td><code>onActionRemoveSelectedHints()</code></td>
+</tr>
+<tr>
+<td><code>onActionRemoveSelectedVertexAnimation()</code></td>
+</tr>
+<tr>
+<td><code>onActionRemoveSelectedVertices()</code></td>
+</tr>
+<tr>
+<td><code>onActionRemoveUnusedMatteDisplacements()</code></td>
+</tr>
+<tr>
+<td><code>onActionResetResourceFolder()</code></td>
+</tr>
+<tr>
+<td><code>onActionShortenMatteHandles()</code></td>
+</tr>
+<tr>
+<td><code>onActionShowOptionsInCameraView()</code></td>
+</tr>
+<tr>
+<td><code>onActionToggleAutoKey()</code></td>
+</tr>
+<tr>
+<td><code>onActionToggleFixAdjacentKeyframes()</code></td>
+</tr>
+<tr>
+<td><code>onActionToggleShowHints()</code></td>
+</tr>
+<tr>
+<td><code>onActionToggleShowInflate()</code></td>
+</tr>
+<tr>
+<td><code>onActionToggleShowInnerContour()</code></td>
+</tr>
+<tr>
+<td><code>onActionToggleShowOuterContour()</code></td>
+</tr>
+<tr>
+<td><code>onActionToggleShowOverlayAnnotation()</code></td>
+</tr>
+<tr>
+<td><code>onActionToggleShowPointId()</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="node-view">Node View<a class="headerlink" href="#node-view" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Action</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>onActionAddFilterToPort()</code></td>
+</tr>
+<tr>
+<td><code>onActionAddNamedInPortFromContextMenu()</code></td>
+</tr>
+<tr>
+<td><code>onActionAddNamedInPortFromContextMenuCancelled()</code></td>
+</tr>
+<tr>
+<td><code>onActionAddNamedInPortFromContextMenuFinished()</code></td>
+</tr>
+<tr>
+<td><code>onActionAddNamedPort()</code></td>
+</tr>
+<tr>
+<td><code>onActionAddNamedPortFromContextMenu()</code></td>
+</tr>
+<tr>
+<td><code>onActionAddNamedPortFromContextMenuFinished()</code></td>
+</tr>
+<tr>
+<td><code>onActionAddNamedPortFromEyeDropper()</code></td>
+</tr>
+<tr>
+<td><code>onActionAddNamedPortFromShortcut()</code></td>
+</tr>
+<tr>
+<td><code>onActionAddSubLayer()</code></td>
+</tr>
+<tr>
+<td><code>onActionCableBezier()</code></td>
+</tr>
+<tr>
+<td><code>onActionCableLine()</code></td>
+</tr>
+<tr>
+<td><code>onActionCableStraight()</code></td>
+</tr>
+<tr>
+<td><code>onActionClearNamedPort()</code></td>
+</tr>
+<tr>
+<td><code>onActionClearNamedPortFromContextMenu()</code></td>
+</tr>
+<tr>
+<td><code>onActionClearPublishedAttributes()</code></td>
+</tr>
+<tr>
+<td><code>onActionCloneElement()</code></td>
+</tr>
+<tr>
+<td><code>onActionCloneElement_DrawingsOnly()</code></td>
+</tr>
+<tr>
+<td><code>onActionCopyNamedPort()</code></td>
+</tr>
+<tr>
+<td><code>onActionCopyNamedPortFromContextMenu()</code></td>
+</tr>
+<tr>
+<td><code>onActionCopyQualifiedName()</code></td>
+</tr>
+<tr>
+<td><code>onActionCreateBackdrop()</code></td>
+</tr>
+<tr>
+<td><code>onActionCreateComposite()</code></td>
+</tr>
+<tr>
+<td><code>onActionCreateCutter()</code></td>
+</tr>
+<tr>
+<td><code>onActionCreateDisplay()</code></td>
+</tr>
+<tr>
+<td><code>onActionCreateFavorite(QString)</code></td>
+</tr>
+<tr>
+<td><code>onActionCreateGroup()</code></td>
+</tr>
+<tr>
+<td><code>onActionCreateModule(QString)</code></td>
+</tr>
+<tr>
+<td><code>onActionCreateParentPeg()</code></td>
+</tr>
+<tr>
+<td><code>onActionCreatePeg()</code></td>
+</tr>
+<tr>
+<td><code>onActionCreateRead()</code></td>
+</tr>
+<tr>
+<td><code>onActionCreateWaypointFromContextMenu()</code></td>
+</tr>
+<tr>
+<td><code>onActionCreateWaypointFromShortcut()</code></td>
+</tr>
+<tr>
+<td><code>onActionDisableAllUnselected()</code></td>
+</tr>
+<tr>
+<td><code>onActionDuplicateElement()</code></td>
+</tr>
+<tr>
+<td><code>onActionEnableAll()</code></td>
+</tr>
+<tr>
+<td><code>onActionEnterGroup()</code></td>
+</tr>
+<tr>
+<td><code>onActionEyeDropperPortFilter()</code></td>
+</tr>
+<tr>
+<td><code>onActionFocusOnChildNodeNV()</code></td>
+</tr>
+<tr>
+<td><code>onActionFocusOnParentNodeNV()</code></td>
+</tr>
+<tr>
+<td><code>onActionFocusOnSelectionNV()</code></td>
+</tr>
+<tr>
+<td><code>onActionGotoPortAbove()</code></td>
+</tr>
+<tr>
+<td><code>onActionGotoPortLeft()</code></td>
+</tr>
+<tr>
+<td><code>onActionGotoPortRight()</code></td>
+</tr>
+<tr>
+<td><code>onActionGotoPortUnder()</code></td>
+</tr>
+<tr>
+<td><code>onActionHideAllThumbNails()</code></td>
+</tr>
+<tr>
+<td><code>onActionHideSelectedThumbNail()</code></td>
+</tr>
+<tr>
+<td><code>onActionMoveWorldNE()</code></td>
+</tr>
+<tr>
+<td><code>onActionMoveWorldNW()</code></td>
+</tr>
+<tr>
+<td><code>onActionMoveWorldSE()</code></td>
+</tr>
+<tr>
+<td><code>onActionMoveWorldSW()</code></td>
+</tr>
+<tr>
+<td><code>onActionNaviSelectChild()</code></td>
+</tr>
+<tr>
+<td><code>onActionNaviSelectChildWithEffects()</code></td>
+</tr>
+<tr>
+<td><code>onActionNaviSelectChilds()</code></td>
+</tr>
+<tr>
+<td><code>onActionNaviSelectInnerChildren()</code></td>
+</tr>
+<tr>
+<td><code>onActionNaviSelectNextBrother()</code></td>
+</tr>
+<tr>
+<td><code>onActionNaviSelectParent()</code></td>
+</tr>
+<tr>
+<td><code>onActionNaviSelectParentWithEffects()</code></td>
+</tr>
+<tr>
+<td><code>onActionNaviSelectPreviousBrother()</code></td>
+</tr>
+<tr>
+<td><code>onActionNavigateGroup()</code></td>
+</tr>
+<tr>
+<td><code>onActionPasteNamedPort()</code></td>
+</tr>
+<tr>
+<td><code>onActionPasteNamedPortFromContextMenu()</code></td>
+</tr>
+<tr>
+<td><code>onActionPasteSpecial()</code></td>
+</tr>
+<tr>
+<td><code>onActionPasteSpecialAgain()</code></td>
+</tr>
+<tr>
+<td><code>onActionPrintNetwork()</code></td>
+</tr>
+<tr>
+<td><code>onActionQuickSearchAddNode()</code></td>
+</tr>
+<tr>
+<td><code>onActionRecenter()</code></td>
+</tr>
+<tr>
+<td><code>onActionRecomputeAll()</code></td>
+</tr>
+<tr>
+<td><code>onActionRecomputeSelected()</code></td>
+</tr>
+<tr>
+<td><code>onActionRenameWaypoint()</code></td>
+</tr>
+<tr>
+<td><code>onActionResetPan()</code></td>
+</tr>
+<tr>
+<td><code>onActionResetView()</code></td>
+</tr>
+<tr>
+<td><code>onActionResetZoom()</code></td>
+</tr>
+<tr>
+<td><code>onActionSelCreateGroup()</code></td>
+</tr>
+<tr>
+<td><code>onActionSelCreateGroupWithComposite()</code></td>
+</tr>
+<tr>
+<td><code>onActionSelDisable()</code></td>
+</tr>
+<tr>
+<td><code>onActionSelEnable()</code></td>
+</tr>
+<tr>
+<td><code>onActionSelMergeInto()</code></td>
+</tr>
+<tr>
+<td><code>onActionSelMoveToParentGroup()</code></td>
+</tr>
+<tr>
+<td><code>onActionSelectLinkedLayers()</code></td>
+</tr>
+<tr>
+<td><code>onActionSetDrawingAsSubLayer()</code></td>
+</tr>
+<tr>
+<td><code>onActionShowAllModules()</code></td>
+</tr>
+<tr>
+<td><code>onActionShowAllThumbNail()</code></td>
+</tr>
+<tr>
+<td><code>onActionShowHideWorldView()</code></td>
+</tr>
+<tr>
+<td><code>onActionShowSelectedThumbNail()</code></td>
+</tr>
+<tr>
+<td><code>onActionTag()</code></td>
+</tr>
+<tr>
+<td><code>onActionToggleCableCutter()</code></td>
+</tr>
+<tr>
+<td><code>onActionToggleDefineAttributeInfo()</code></td>
+</tr>
+<tr>
+<td><code>onActionToggleDefinePublishMode()</code></td>
+</tr>
+<tr>
+<td><code>onActionTogglePortFilterMode()</code></td>
+</tr>
+<tr>
+<td><code>onActionTogglePortFilterMode(AC_ActionInfo*)</code></td>
+</tr>
+<tr>
+<td><code>onActionToggleSelectedThumbNail()</code></td>
+</tr>
+<tr>
+<td><code>onActionUnlinkSubLayer()</code></td>
+</tr>
+<tr>
+<td><code>onActionUntag()</code></td>
+</tr>
+<tr>
+<td><code>onActionUntagAll()</code></td>
+</tr>
+<tr>
+<td><code>onActionUntagAllOthers()</code></td>
+</tr>
+<tr>
+<td><code>onActionUpToParent()</code></td>
+</tr>
+<tr>
+<td><code>onActionZoomIn()</code></td>
+</tr>
+<tr>
+<td><code>onActionZoomOut()</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="particlecoreguiresponder">ParticleCoreGuiResponder<a class="headerlink" href="#particlecoreguiresponder" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Action</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>onActionInsertParticleTemplate(QString)</code></td>
+</tr>
+<tr>
+<td><code>onActionToggleShowAsDots()</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="pluginhelpviewresponder">PluginHelpViewResponder<a class="headerlink" href="#pluginhelpviewresponder" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Action</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>onActionShowShortcuts()</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="scriptviewresponder">ScriptViewResponder<a class="headerlink" href="#scriptviewresponder" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Action</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>onActionCallExternalEditor()</code></td>
+</tr>
+<tr>
+<td><code>onActionDebug()</code></td>
+</tr>
+<tr>
+<td><code>onActionDeleteScript()</code></td>
+</tr>
+<tr>
+<td><code>onActionImportScript()</code></td>
+</tr>
+<tr>
+<td><code>onActionNewScriptFile()</code></td>
+</tr>
+<tr>
+<td><code>onActionOpenExtendedHelp()</code></td>
+</tr>
+<tr>
+<td><code>onActionOpenHelp()</code></td>
+</tr>
+<tr>
+<td><code>onActionOpenHelpScriptNode()</code></td>
+</tr>
+<tr>
+<td><code>onActionRefreshScripts()</code></td>
+</tr>
+<tr>
+<td><code>onActionRun()</code></td>
+</tr>
+<tr>
+<td><code>onActionSetExternalEditor()</code></td>
+</tr>
+<tr>
+<td><code>onActionSetTarget()</code></td>
+</tr>
+<tr>
+<td><code>onActionStopExecution()</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="shiftandtracetoolresponder">ShiftAndTraceToolResponder<a class="headerlink" href="#shiftandtracetoolresponder" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Action</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>onActionAddCrossHairMode()</code></td>
+</tr>
+<tr>
+<td><code>onActionEnableShiftAndTrace()</code></td>
+</tr>
+<tr>
+<td><code>onActionRemoveCrossHair()</code></td>
+</tr>
+<tr>
+<td><code>onActionResetAllShiftPositions()</code></td>
+</tr>
+<tr>
+<td><code>onActionResetCurrentShiftPosition()</code></td>
+</tr>
+<tr>
+<td><code>onActionSelectShiftAndTraceTool()</code></td>
+</tr>
+<tr>
+<td><code>onActionSetPegPosition(int)</code></td>
+</tr>
+<tr>
+<td><code>onActionShiftAndTraceToolResetAllPositions()</code></td>
+</tr>
+<tr>
+<td><code>onActionShiftAndTraceToolResetCurrentPosition()</code></td>
+</tr>
+<tr>
+<td><code>onActionShiftAndTraceToolRotateOverride()</code></td>
+</tr>
+<tr>
+<td><code>onActionShiftAndTraceToolScaleOverride()</code></td>
+</tr>
+<tr>
+<td><code>onActionShowCrossHair()</code></td>
+</tr>
+<tr>
+<td><code>onActionToggleShowManipulator()</code></td>
+</tr>
+<tr>
+<td><code>onActionToggleShowOutline()</code></td>
+</tr>
+<tr>
+<td><code>onActionToggleShowPegs()</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="artlayerresponder">artLayerResponder<a class="headerlink" href="#artlayerresponder" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Action</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>onActionColorArtSelected()</code></td>
+</tr>
+<tr>
+<td><code>onActionLineArtSelected()</code></td>
+</tr>
+<tr>
+<td><code>onActionOverlayArtSelected()</code></td>
+</tr>
+<tr>
+<td><code>onActionPreviewModeToggle()</code></td>
+</tr>
+<tr>
+<td><code>onActionToggleLineColorArt()</code></td>
+</tr>
+<tr>
+<td><code>onActionToggleOverlayUnderlayArt()</code></td>
+</tr>
+<tr>
+<td><code>onActionUnderlayArtSelected()</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="cameraview">cameraView<a class="headerlink" href="#cameraview" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Action</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>onAction12FieldGrid()</code></td>
+</tr>
+<tr>
+<td><code>onAction16FieldGrid()</code></td>
+</tr>
+<tr>
+<td><code>onAction16x12FieldGrid()</code></td>
+</tr>
+<tr>
+<td><code>onActionAutoLightTable()</code></td>
+</tr>
+<tr>
+<td><code>onActionAutoLightTable()</code></td>
+</tr>
+<tr>
+<td><code>onActionAutoRender()</code></td>
+</tr>
+<tr>
+<td><code>onActionCenterAndScaleToFit()</code></td>
+</tr>
+<tr>
+<td><code>onActionChooseBrushToolOverride()</code></td>
+</tr>
+<tr>
+<td><code>onActionChooseCenterlineEditorToolOverride()</code></td>
+</tr>
+<tr>
+<td><code>onActionChooseCloseGapToolOverride()</code></td>
+</tr>
+<tr>
+<td><code>onActionChooseContourEditorToolOverride()</code></td>
+</tr>
+<tr>
+<td><code>onActionChooseCutterToolOverride()</code></td>
+</tr>
+<tr>
+<td><code>onActionChooseDeformToolOverride()</code></td>
+</tr>
+<tr>
+<td><code>onActionChooseDropperToolOverride()</code></td>
+</tr>
+<tr>
+<td><code>onActionChooseEditTransformToolOverride()</code></td>
+</tr>
+<tr>
+<td><code>onActionChooseEllipseToolOverride()</code></td>
+</tr>
+<tr>
+<td><code>onActionChooseEraserToolOverride()</code></td>
+</tr>
+<tr>
+<td><code>onActionChooseFirstPersonNavigation3dToolOverride()</code></td>
+</tr>
+<tr>
+<td><code>onActionChooseGrabberToolOverride()</code></td>
+</tr>
+<tr>
+<td><code>onActionChooseInkToolOverride()</code></td>
+</tr>
+<tr>
+<td><code>onActionChooseLineToolOverride()</code></td>
+</tr>
+<tr>
+<td><code>onActionChooseMorphToolOverride()</code></td>
+</tr>
+<tr>
+<td><code>onActionChooseNoToolOverride()</code></td>
+</tr>
+<tr>
+<td><code>onActionChoosePaintToolOverride()</code></td>
+</tr>
+<tr>
+<td><code>onActionChoosePaintUnpaintedToolOverride()</code></td>
+</tr>
+<tr>
+<td><code>onActionChoosePencilToolOverride()</code></td>
+</tr>
+<tr>
+<td><code>onActionChoosePerspectiveToolOverride()</code></td>
+</tr>
+<tr>
+<td><code>onActionChoosePolylineToolOverride()</code></td>
+</tr>
+<tr>
+<td><code>onActionChooseRectangleToolOverride()</code></td>
+</tr>
+<tr>
+<td><code>onActionChooseRepaintToolOverride()</code></td>
+</tr>
+<tr>
+<td><code>onActionChooseRepositionAllDrawingsToolOverride()</code></td>
+</tr>
+<tr>
+<td><code>onActionChooseResizePenStyleToolOverride()</code></td>
+</tr>
+<tr>
+<td><code>onActionChooseRotateToolOverride()</code></td>
+</tr>
+<tr>
+<td><code>onActionChooseSelectToolOverride()</code></td>
+</tr>
+<tr>
+<td><code>onActionChooseShiftAndTraceToolOverride()</code></td>
+</tr>
+<tr>
+<td><code>onActionChooseSpInverseKinematicsToolOverride()</code></td>
+</tr>
+<tr>
+<td><code>onActionChooseSpMaintainSizeToolOverride()</code></td>
+</tr>
+<tr>
+<td><code>onActionChooseSpOffsetZToolOverride()</code></td>
+</tr>
+<tr>
+<td><code>onActionChooseSpRotateToolOverride()</code></td>
+</tr>
+<tr>
+<td><code>onActionChooseSpScaleToolOverride()</code></td>
+</tr>
+<tr>
+<td><code>onActionChooseSpSelectToolOverride()</code></td>
+</tr>
+<tr>
+<td><code>onActionChooseSpSkewToolOverride()</code></td>
+</tr>
+<tr>
+<td><code>onActionChooseSpSmoothEditingToolOverride()</code></td>
+</tr>
+<tr>
+<td><code>onActionChooseSpSplineOffsetToolOverride()</code></td>
+</tr>
+<tr>
+<td><code>onActionChooseSpTransformToolOverride()</code></td>
+</tr>
+<tr>
+<td><code>onActionChooseSpTranslateToolOverride()</code></td>
+</tr>
+<tr>
+<td><code>onActionChooseStencilBrushToolOverride()</code></td>
+</tr>
+<tr>
+<td><code>onActionChooseStrokeToolOverride()</code></td>
+</tr>
+<tr>
+<td><code>onActionChooseThirdPersonNavigation3dToolOverride()</code></td>
+</tr>
+<tr>
+<td><code>onActionChooseUnpaintToolOverride()</code></td>
+</tr>
+<tr>
+<td><code>onActionChooseZoomToolOverride()</code></td>
+</tr>
+<tr>
+<td><code>onActionCreateEmptyDrawing()</code></td>
+</tr>
+<tr>
+<td><code>onActionDeleteDrawings()</code></td>
+</tr>
+<tr>
+<td><code>onActionDepthView()</code></td>
+</tr>
+<tr>
+<td><code>onActionDuplicateDrawing()</code></td>
+</tr>
+<tr>
+<td><code>onActionEnterSymbol()</code></td>
+</tr>
+<tr>
+<td><code>onActionFieldGridBox()</code></td>
+</tr>
+<tr>
+<td><code>onActionFocusOnSelectionCV()</code></td>
+</tr>
+<tr>
+<td><code>onActionGetRightToModifyDrawings()</code></td>
+</tr>
+<tr>
+<td><code>onActionGridOverlay()</code></td>
+</tr>
+<tr>
+<td><code>onActionGridUnderlay()</code></td>
+</tr>
+<tr>
+<td><code>onActionHideLineTexture()</code></td>
+</tr>
+<tr>
+<td><code>onActionHideSnapshot()</code></td>
+</tr>
+<tr>
+<td><code>onActionInsertControlPoint()</code></td>
+</tr>
+<tr>
+<td><code>onActionInvalidateCanvas()</code></td>
+</tr>
+<tr>
+<td><code>onActionLeaveSymbol()</code></td>
+</tr>
+<tr>
+<td><code>onActionLinkSelectedDrawings()</code></td>
+</tr>
+<tr>
+<td><code>onActionLock()</code></td>
+</tr>
+<tr>
+<td><code>onActionLockAll()</code></td>
+</tr>
+<tr>
+<td><code>onActionLockAllOthers()</code></td>
+</tr>
+<tr>
+<td><code>onActionMainGotoFirstFrame()</code></td>
+</tr>
+<tr>
+<td><code>onActionMainGotoLastFrame()</code></td>
+</tr>
+<tr>
+<td><code>onActionMainGotoNextFrame()</code></td>
+</tr>
+<tr>
+<td><code>onActionMainGotoPreviousFrame()</code></td>
+</tr>
+<tr>
+<td><code>onActionMatteView()</code></td>
+</tr>
+<tr>
+<td><code>onActionMorphSwitchKeyDrawing()</code></td>
+</tr>
+<tr>
+<td><code>onActionMorphSwitchKeyDrawing()</code></td>
+</tr>
+<tr>
+<td><code>onActionMoveDrawingDown()</code></td>
+</tr>
+<tr>
+<td><code>onActionMoveDrawingUp()</code></td>
+</tr>
+<tr>
+<td><code>onActionNaviSelectChild()</code></td>
+</tr>
+<tr>
+<td><code>onActionNaviSelectChildWithEffects()</code></td>
+</tr>
+<tr>
+<td><code>onActionNaviSelectChilds()</code></td>
+</tr>
+<tr>
+<td><code>onActionNaviSelectNextBrother()</code></td>
+</tr>
+<tr>
+<td><code>onActionNaviSelectParent()</code></td>
+</tr>
+<tr>
+<td><code>onActionNaviSelectParentWithEffects()</code></td>
+</tr>
+<tr>
+<td><code>onActionNaviSelectPreviousBrother()</code></td>
+</tr>
+<tr>
+<td><code>onActionNextColumn()</code></td>
+</tr>
+<tr>
+<td><code>onActionNextDrawing()</code></td>
+</tr>
+<tr>
+<td><code>onActionNodeCacheMode()</code></td>
+</tr>
+<tr>
+<td><code>onActionNormalGrid()</code></td>
+</tr>
+<tr>
+<td><code>onActionOnionOffAll()</code></td>
+</tr>
+<tr>
+<td><code>onActionOnionOffAllOther()</code></td>
+</tr>
+<tr>
+<td><code>onActionOnionOffSelection()</code></td>
+</tr>
+<tr>
+<td><code>onActionOnionOnAll()</code></td>
+</tr>
+<tr>
+<td><code>onActionOnionOnSelection()</code></td>
+</tr>
+<tr>
+<td><code>onActionOpenGLView()</code></td>
+</tr>
+<tr>
+<td><code>onActionPlayByFrame()</code></td>
+</tr>
+<tr>
+<td><code>onActionPreviousColumn()</code></td>
+</tr>
+<tr>
+<td><code>onActionPreviousDrawing()</code></td>
+</tr>
+<tr>
+<td><code>onActionProportionGrid()</code></td>
+</tr>
+<tr>
+<td><code>onActionRecenter()</code></td>
+</tr>
+<tr>
+<td><code>onActionReleaseRightToModifyDrawings()</code></td>
+</tr>
+<tr>
+<td><code>onActionRemoveFromDrawingList()</code></td>
+</tr>
+<tr>
+<td><code>onActionRenameDrawing()</code></td>
+</tr>
+<tr>
+<td><code>onActionRenameDrawing()</code></td>
+</tr>
+<tr>
+<td><code>onActionRenameDrawingWithPrefix()</code></td>
+</tr>
+<tr>
+<td><code>onActionRenameDrawingWithPrefix()</code></td>
+</tr>
+<tr>
+<td><code>onActionRender()</code></td>
+</tr>
+<tr>
+<td><code>onActionRenderView()</code></td>
+</tr>
+<tr>
+<td><code>onActionReplaceDrawing()</code></td>
+</tr>
+<tr>
+<td><code>onActionResetDrawingPosition()</code></td>
+</tr>
+<tr>
+<td><code>onActionResetPan()</code></td>
+</tr>
+<tr>
+<td><code>onActionResetRotation()</code></td>
+</tr>
+<tr>
+<td><code>onActionResetView()</code></td>
+</tr>
+<tr>
+<td><code>onActionResetZoom()</code></td>
+</tr>
+<tr>
+<td><code>onActionReturnToNormalMode()</code></td>
+</tr>
+<tr>
+<td><code>onActionRotateCCW()</code></td>
+</tr>
+<tr>
+<td><code>onActionRotateCW()</code></td>
+</tr>
+<tr>
+<td><code>onActionSelectControlPoint()</code></td>
+</tr>
+<tr>
+<td><code>onActionSelectedElementSwapToNextDrawing()</code></td>
+</tr>
+<tr>
+<td><code>onActionSelectedElementSwapToNextDrawingSameLayer()</code></td>
+</tr>
+<tr>
+<td><code>onActionSelectedElementSwapToNextFrame()</code></td>
+</tr>
+<tr>
+<td><code>onActionSelectedElementSwapToNextLayer()</code></td>
+</tr>
+<tr>
+<td><code>onActionSelectedElementSwapToPrevDrawing()</code></td>
+</tr>
+<tr>
+<td><code>onActionSelectedElementSwapToPrevDrawingSameLayer()</code></td>
+</tr>
+<tr>
+<td><code>onActionSelectedElementSwapToPrevFrame()</code></td>
+</tr>
+<tr>
+<td><code>onActionSelectedElementSwapToPrevLayer()</code></td>
+</tr>
+<tr>
+<td><code>onActionSetSmallFilesResolution()</code></td>
+</tr>
+<tr>
+<td><code>onActionSetThumbnailSize(int)</code></td>
+</tr>
+<tr>
+<td><code>onActionShowColorEditor()</code></td>
+</tr>
+<tr>
+<td><code>onActionShowColorModel()</code></td>
+</tr>
+<tr>
+<td><code>onActionShowColorPicker()</code></td>
+</tr>
+<tr>
+<td><code>onActionShowGrid()</code></td>
+</tr>
+<tr>
+<td><code>onActionShowMorphingInspector()</code></td>
+</tr>
+<tr>
+<td><code>onActionShowPaletteManager()</code></td>
+</tr>
+<tr>
+<td><code>onActionShowScanInfo()</code></td>
+</tr>
+<tr>
+<td><code>onActionShowSnapshot(int)</code></td>
+</tr>
+<tr>
+<td><code>onActionShowThumbnailPanel()</code></td>
+</tr>
+<tr>
+<td><code>onActionTag()</code></td>
+</tr>
+<tr>
+<td><code>onActionTakeSnapshot(int)</code></td>
+</tr>
+<tr>
+<td><code>onActionToggleCameraCone()</code></td>
+</tr>
+<tr>
+<td><code>onActionToggleCameraMask()</code></td>
+</tr>
+<tr>
+<td><code>onActionToggleDrawingOnPeg()</code></td>
+</tr>
+<tr>
+<td><code>onActionToggleDrawingOnPeg(VL_DrawingListWidget*)</code></td>
+</tr>
+<tr>
+<td><code>onActionToggleDrawingVisibility()</code></td>
+</tr>
+<tr>
+<td><code>onActionToggleDrawingVisibility(VL_DrawingListWidget*)</code></td>
+</tr>
+<tr>
+<td><code>onActionTogglePlayback()</code></td>
+</tr>
+<tr>
+<td><code>onActionTogglePreventFromDrawing()</code></td>
+</tr>
+<tr>
+<td><code>onActionToggleQuickCloseUp()</code></td>
+</tr>
+<tr>
+<td><code>onActionToggleShiftAndTraceManipulator()</code></td>
+</tr>
+<tr>
+<td><code>onActionToggleShiftAndTracePegView()</code></td>
+</tr>
+<tr>
+<td><code>onActionToggleShowSymbolPivot()</code></td>
+</tr>
+<tr>
+<td><code>onActionUnlock()</code></td>
+</tr>
+<tr>
+<td><code>onActionUnlockAll()</code></td>
+</tr>
+<tr>
+<td><code>onActionUntag()</code></td>
+</tr>
+<tr>
+<td><code>onActionWorldGrid()</code></td>
+</tr>
+<tr>
+<td><code>onActionZoomIn()</code></td>
+</tr>
+<tr>
+<td><code>onActionZoomOut()</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="coloroperationsresponder">colorOperationsResponder<a class="headerlink" href="#coloroperationsresponder" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Action</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>onActionRepaintColorInDrawing()</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="drawingview">drawingView<a class="headerlink" href="#drawingview" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Action</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>onAction12FieldGrid()</code></td>
+</tr>
+<tr>
+<td><code>onAction16FieldGrid()</code></td>
+</tr>
+<tr>
+<td><code>onAction16x12FieldGrid()</code></td>
+</tr>
+<tr>
+<td><code>onActionAutoLightTable()</code></td>
+</tr>
+<tr>
+<td><code>onActionCenterAndScaleToFit()</code></td>
+</tr>
+<tr>
+<td><code>onActionChooseBrushToolOverride()</code></td>
+</tr>
+<tr>
+<td><code>onActionChooseCenterlineEditorToolOverride()</code></td>
+</tr>
+<tr>
+<td><code>onActionChooseCloseGapToolOverride()</code></td>
+</tr>
+<tr>
+<td><code>onActionChooseContourEditorToolOverride()</code></td>
+</tr>
+<tr>
+<td><code>onActionChooseCutterToolOverride()</code></td>
+</tr>
+<tr>
+<td><code>onActionChooseDeformToolOverride()</code></td>
+</tr>
+<tr>
+<td><code>onActionChooseDropperToolOverride()</code></td>
+</tr>
+<tr>
+<td><code>onActionChooseEditTransformToolOverride()</code></td>
+</tr>
+<tr>
+<td><code>onActionChooseEllipseToolOverride()</code></td>
+</tr>
+<tr>
+<td><code>onActionChooseEraserToolOverride()</code></td>
+</tr>
+<tr>
+<td><code>onActionChooseFirstPersonNavigation3dToolOverride()</code></td>
+</tr>
+<tr>
+<td><code>onActionChooseGrabberToolOverride()</code></td>
+</tr>
+<tr>
+<td><code>onActionChooseInkToolOverride()</code></td>
+</tr>
+<tr>
+<td><code>onActionChooseLineToolOverride()</code></td>
+</tr>
+<tr>
+<td><code>onActionChooseMorphToolOverride()</code></td>
+</tr>
+<tr>
+<td><code>onActionChooseNoToolOverride()</code></td>
+</tr>
+<tr>
+<td><code>onActionChoosePaintToolOverride()</code></td>
+</tr>
+<tr>
+<td><code>onActionChoosePaintUnpaintedToolOverride()</code></td>
+</tr>
+<tr>
+<td><code>onActionChoosePencilToolOverride()</code></td>
+</tr>
+<tr>
+<td><code>onActionChoosePerspectiveToolOverride()</code></td>
+</tr>
+<tr>
+<td><code>onActionChoosePolylineToolOverride()</code></td>
+</tr>
+<tr>
+<td><code>onActionChooseRectangleToolOverride()</code></td>
+</tr>
+<tr>
+<td><code>onActionChooseRepaintToolOverride()</code></td>
+</tr>
+<tr>
+<td><code>onActionChooseRepositionAllDrawingsToolOverride()</code></td>
+</tr>
+<tr>
+<td><code>onActionChooseResizePenStyleToolOverride()</code></td>
+</tr>
+<tr>
+<td><code>onActionChooseRotateToolOverride()</code></td>
+</tr>
+<tr>
+<td><code>onActionChooseSelectToolOverride()</code></td>
+</tr>
+<tr>
+<td><code>onActionChooseShiftAndTraceToolOverride()</code></td>
+</tr>
+<tr>
+<td><code>onActionChooseStencilBrushToolOverride()</code></td>
+</tr>
+<tr>
+<td><code>onActionChooseStrokeToolOverride()</code></td>
+</tr>
+<tr>
+<td><code>onActionChooseThirdPersonNavigation3dToolOverride()</code></td>
+</tr>
+<tr>
+<td><code>onActionChooseUnpaintToolOverride()</code></td>
+</tr>
+<tr>
+<td><code>onActionChooseZoomToolOverride()</code></td>
+</tr>
+<tr>
+<td><code>onActionCreateEmptyDrawing()</code></td>
+</tr>
+<tr>
+<td><code>onActionDeleteDrawings()</code></td>
+</tr>
+<tr>
+<td><code>onActionDuplicateDrawing()</code></td>
+</tr>
+<tr>
+<td><code>onActionFieldGridBox()</code></td>
+</tr>
+<tr>
+<td><code>onActionGetRightToModifyDrawings()</code></td>
+</tr>
+<tr>
+<td><code>onActionGridOverlay()</code></td>
+</tr>
+<tr>
+<td><code>onActionGridUnderlay()</code></td>
+</tr>
+<tr>
+<td><code>onActionHideLineTexture()</code></td>
+</tr>
+<tr>
+<td><code>onActionLinkSelectedDrawings()</code></td>
+</tr>
+<tr>
+<td><code>onActionMorphSwitchKeyDrawing()</code></td>
+</tr>
+<tr>
+<td><code>onActionMoveDrawingDown()</code></td>
+</tr>
+<tr>
+<td><code>onActionMoveDrawingUp()</code></td>
+</tr>
+<tr>
+<td><code>onActionNextColumn()</code></td>
+</tr>
+<tr>
+<td><code>onActionNextDrawing()</code></td>
+</tr>
+<tr>
+<td><code>onActionNormalGrid()</code></td>
+</tr>
+<tr>
+<td><code>onActionPlayByFrame()</code></td>
+</tr>
+<tr>
+<td><code>onActionPreviousColumn()</code></td>
+</tr>
+<tr>
+<td><code>onActionPreviousDrawing()</code></td>
+</tr>
+<tr>
+<td><code>onActionRecenter()</code></td>
+</tr>
+<tr>
+<td><code>onActionReleaseRightToModifyDrawings()</code></td>
+</tr>
+<tr>
+<td><code>onActionRemoveFromDrawingList()</code></td>
+</tr>
+<tr>
+<td><code>onActionRenameDrawing()</code></td>
+</tr>
+<tr>
+<td><code>onActionRenameDrawingWithPrefix()</code></td>
+</tr>
+<tr>
+<td><code>onActionReplaceDrawing()</code></td>
+</tr>
+<tr>
+<td><code>onActionResetDrawingPosition()</code></td>
+</tr>
+<tr>
+<td><code>onActionResetPan()</code></td>
+</tr>
+<tr>
+<td><code>onActionResetRotation()</code></td>
+</tr>
+<tr>
+<td><code>onActionResetView()</code></td>
+</tr>
+<tr>
+<td><code>onActionResetZoom()</code></td>
+</tr>
+<tr>
+<td><code>onActionReturnToNormalMode()</code></td>
+</tr>
+<tr>
+<td><code>onActionRotateCCW()</code></td>
+</tr>
+<tr>
+<td><code>onActionRotateCW()</code></td>
+</tr>
+<tr>
+<td><code>onActionSelectedElementSwapToNextDrawing()</code></td>
+</tr>
+<tr>
+<td><code>onActionSelectedElementSwapToNextDrawingSameLayer()</code></td>
+</tr>
+<tr>
+<td><code>onActionSelectedElementSwapToNextFrame()</code></td>
+</tr>
+<tr>
+<td><code>onActionSelectedElementSwapToNextLayer()</code></td>
+</tr>
+<tr>
+<td><code>onActionSelectedElementSwapToPrevDrawing()</code></td>
+</tr>
+<tr>
+<td><code>onActionSelectedElementSwapToPrevDrawingSameLayer()</code></td>
+</tr>
+<tr>
+<td><code>onActionSelectedElementSwapToPrevFrame()</code></td>
+</tr>
+<tr>
+<td><code>onActionSelectedElementSwapToPrevLayer()</code></td>
+</tr>
+<tr>
+<td><code>onActionSetThumbnailSize(int)</code></td>
+</tr>
+<tr>
+<td><code>onActionShowColorEditor()</code></td>
+</tr>
+<tr>
+<td><code>onActionShowColorModel()</code></td>
+</tr>
+<tr>
+<td><code>onActionShowColorPicker()</code></td>
+</tr>
+<tr>
+<td><code>onActionShowGrid()</code></td>
+</tr>
+<tr>
+<td><code>onActionShowMorphingInspector()</code></td>
+</tr>
+<tr>
+<td><code>onActionShowPaletteManager()</code></td>
+</tr>
+<tr>
+<td><code>onActionShowScanInfo()</code></td>
+</tr>
+<tr>
+<td><code>onActionShowThumbnailPanel()</code></td>
+</tr>
+<tr>
+<td><code>onActionToggleDrawingOnPeg()</code></td>
+</tr>
+<tr>
+<td><code>onActionToggleDrawingOnPeg(VL_DrawingListWidget*)</code></td>
+</tr>
+<tr>
+<td><code>onActionToggleDrawingVisibility()</code></td>
+</tr>
+<tr>
+<td><code>onActionToggleDrawingVisibility(VL_DrawingListWidget*)</code></td>
+</tr>
+<tr>
+<td><code>onActionToggleQuickCloseUp()</code></td>
+</tr>
+<tr>
+<td><code>onActionToggleShiftAndTraceManipulator()</code></td>
+</tr>
+<tr>
+<td><code>onActionToggleShiftAndTracePegView()</code></td>
+</tr>
+<tr>
+<td><code>onActionToggleShowSymbolPivot()</code></td>
+</tr>
+<tr>
+<td><code>onActionWorldGrid()</code></td>
+</tr>
+<tr>
+<td><code>onActionZoomIn()</code></td>
+</tr>
+<tr>
+<td><code>onActionZoomOut()</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="exportcoreresponder">exportCoreResponder<a class="headerlink" href="#exportcoreresponder" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Action</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>onActionGenerateLayoutImage()</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="graph3dresponder">graph3dresponder<a class="headerlink" href="#graph3dresponder" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Action</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>onActionAddSubTransformationFilter()</code></td>
+</tr>
+<tr>
+<td><code>onActionCreateSubNodeTransformation()</code></td>
+</tr>
+<tr>
+<td><code>onActionDisableSubnode()</code></td>
+</tr>
+<tr>
+<td><code>onActionDumpSceneGraphInformation()</code></td>
+</tr>
+<tr>
+<td><code>onActionEnableSubnode()</code></td>
+</tr>
+<tr>
+<td><code>onActionHideSubnodeShape()</code></td>
+</tr>
+<tr>
+<td><code>onActionResetSubnodeShapeVisibility()</code></td>
+</tr>
+<tr>
+<td><code>onActionSelectChild()</code></td>
+</tr>
+<tr>
+<td><code>onActionSelectChild(std::optional&lt;bool&gt;)</code></td>
+</tr>
+<tr>
+<td><code>onActionSelectNextSibling()</code></td>
+</tr>
+<tr>
+<td><code>onActionSelectNextSibling(std::optional&lt;bool&gt;)</code></td>
+</tr>
+<tr>
+<td><code>onActionSelectParent()</code></td>
+</tr>
+<tr>
+<td><code>onActionSelectParent(std::optional&lt;bool&gt;)</code></td>
+</tr>
+<tr>
+<td><code>onActionSelectPreviousSibling()</code></td>
+</tr>
+<tr>
+<td><code>onActionSelectPreviousSibling(std::optional&lt;bool&gt;)</code></td>
+</tr>
+<tr>
+<td><code>onActionShowSubnodeShape()</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="ikresponder">ikResponder<a class="headerlink" href="#ikresponder" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Action</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>onActionRemoveAllConstraints()</code></td>
+</tr>
+<tr>
+<td><code>onActionSetIKHoldOrientation()</code></td>
+</tr>
+<tr>
+<td><code>onActionSetIKHoldX()</code></td>
+</tr>
+<tr>
+<td><code>onActionSetIKHoldY()</code></td>
+</tr>
+<tr>
+<td><code>onActionSetIKMaxAngle()</code></td>
+</tr>
+<tr>
+<td><code>onActionSetIKMinAngle()</code></td>
+</tr>
+<tr>
+<td><code>onActionSetIKNail()</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="libraryview">libraryView<a class="headerlink" href="#libraryview" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Action</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>onActionShortcutRename()</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="minipegmoduleresponder">miniPegModuleResponder<a class="headerlink" href="#minipegmoduleresponder" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Action</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>onActionAddDeformationModuleByName(QString)</code></td>
+</tr>
+<tr>
+<td><code>onActionConvertDeformedDrawingsAndCreateDeformation()</code></td>
+</tr>
+<tr>
+<td><code>onActionConvertDeformedDrawingsToDrawings()</code></td>
+</tr>
+<tr>
+<td><code>onActionConvertEllipseToShape()</code></td>
+</tr>
+<tr>
+<td><code>onActionConvertSelectionToCurve()</code></td>
+</tr>
+<tr>
+<td><code>onActionCopyCurvePositionToOffset()</code></td>
+</tr>
+<tr>
+<td><code>onActionCopyRestingPositionToCurrentPosition()</code></td>
+</tr>
+<tr>
+<td><code>onActionCreateKinematicOutput()</code></td>
+</tr>
+<tr>
+<td><code>onActionCreateNewDeformationChain()</code></td>
+</tr>
+<tr>
+<td><code>onActionDeleteShapeAwareBoneAndCage()</code></td>
+</tr>
+<tr>
+<td><code>onActionEmitResetDeformer(QString)</code></td>
+</tr>
+<tr>
+<td><code>onActionEmitResetDeformerCurrentFrame(QString)</code></td>
+</tr>
+<tr>
+<td><code>onActionHideDeformer(QString)</code></td>
+</tr>
+<tr>
+<td><code>onActionInsertDeformationAbove()</code></td>
+</tr>
+<tr>
+<td><code>onActionInsertDeformationUnder()</code></td>
+</tr>
+<tr>
+<td><code>onActionRenameTransformation()</code></td>
+</tr>
+<tr>
+<td><code>onActionResetDeform()</code></td>
+</tr>
+<tr>
+<td><code>onActionResetDeformer(QString)</code></td>
+</tr>
+<tr>
+<td><code>onActionResetDeformerCurrentFrame(QString)</code></td>
+</tr>
+<tr>
+<td><code>onActionSelectRigTool()</code></td>
+</tr>
+<tr>
+<td><code>onActionSetMasterElementModule()</code></td>
+</tr>
+<tr>
+<td><code>onActionSetTransformation()</code></td>
+</tr>
+<tr>
+<td><code>onActionShowDeformer(QString)</code></td>
+</tr>
+<tr>
+<td><code>onActionShowSelectedDeformers()</code></td>
+</tr>
+<tr>
+<td><code>onActionStraightenSelection()</code></td>
+</tr>
+<tr>
+<td><code>onActionToggleEnableDeformation()</code></td>
+</tr>
+<tr>
+<td><code>onActionToggleShowAllManipulators()</code></td>
+</tr>
+<tr>
+<td><code>onActionToggleShowAllROI()</code></td>
+</tr>
+<tr>
+<td><code>onActionToggleShowManipulator()</code></td>
+</tr>
+<tr>
+<td><code>onActionToggleShowSimpleManipulators()</code></td>
+</tr>
+<tr>
+<td><code>onActionToggleWireframe()</code></td>
+</tr>
+<tr>
+<td><code>onActionUnsetLocalFlag()</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="modulelibraryview">moduleLibraryView<a class="headerlink" href="#modulelibraryview" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Action</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>onActionNewCategory()</code></td>
+</tr>
+<tr>
+<td><code>onActionReceiveFocus()</code></td>
+</tr>
+<tr>
+<td><code>onActionRefresh()</code></td>
+</tr>
+<tr>
+<td><code>onActionRemoveCategory()</code></td>
+</tr>
+<tr>
+<td><code>onActionRemoveUserModule()</code></td>
+</tr>
+<tr>
+<td><code>onActionRenameCategory()</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="moduleresponder">moduleResponder<a class="headerlink" href="#moduleresponder" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Action</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>onActionAddModule(int,int)</code></td>
+</tr>
+<tr>
+<td><code>onActionAddModuleByName(QString)</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="onionskinresponder">onionSkinResponder<a class="headerlink" href="#onionskinresponder" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Action</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>onActionMaxOpacitySliderChanged(int)</code></td>
+</tr>
+<tr>
+<td><code>onActionOnionSkin1NextDrawing()</code></td>
+</tr>
+<tr>
+<td><code>onActionOnionSkin1PrevDrawing()</code></td>
+</tr>
+<tr>
+<td><code>onActionOnionSkin2NextDrawings()</code></td>
+</tr>
+<tr>
+<td><code>onActionOnionSkin2PrevDrawings()</code></td>
+</tr>
+<tr>
+<td><code>onActionOnionSkin3NextDrawings()</code></td>
+</tr>
+<tr>
+<td><code>onActionOnionSkin3PrevDrawings()</code></td>
+</tr>
+<tr>
+<td><code>onActionOnionSkinAddNextDrawing()</code></td>
+</tr>
+<tr>
+<td><code>onActionOnionSkinAddPrevDrawing()</code></td>
+</tr>
+<tr>
+<td><code>onActionOnionSkinAdvancedNextSliderChanged(int,int)</code></td>
+</tr>
+<tr>
+<td><code>onActionOnionSkinAdvancedPrevSliderChanged(int,int)</code></td>
+</tr>
+<tr>
+<td><code>onActionOnionSkinDrawingMode(int)</code></td>
+</tr>
+<tr>
+<td><code>onActionOnionSkinLinkSliders()</code></td>
+</tr>
+<tr>
+<td><code>onActionOnionSkinNoNextDrawings()</code></td>
+</tr>
+<tr>
+<td><code>onActionOnionSkinNoPrevDrawings()</code></td>
+</tr>
+<tr>
+<td><code>onActionOnionSkinReduceNextDrawing()</code></td>
+</tr>
+<tr>
+<td><code>onActionOnionSkinReducePrevDrawing()</code></td>
+</tr>
+<tr>
+<td><code>onActionOnionSkinRenderOrder(int)</code></td>
+</tr>
+<tr>
+<td><code>onActionOnionSkinRenderStyle(int)</code></td>
+</tr>
+<tr>
+<td><code>onActionOnionSkinSelectedLayerOnly()</code></td>
+</tr>
+<tr>
+<td><code>onActionOnionSkinToggle()</code></td>
+</tr>
+<tr>
+<td><code>onActionOnionSkinToggleAdvancedMode()</code></td>
+</tr>
+<tr>
+<td><code>onActionOnionSkinToggleAdvancedNext(int)</code></td>
+</tr>
+<tr>
+<td><code>onActionOnionSkinToggleAdvancedPrev(int)</code></td>
+</tr>
+<tr>
+<td><code>onActionOnionSkinToggleBaseMode()</code></td>
+</tr>
+<tr>
+<td><code>onActionOnionSkinToggleBrightnessAsAlpha()</code></td>
+</tr>
+<tr>
+<td><code>onActionOnionSkinToggleCenterline()</code></td>
+</tr>
+<tr>
+<td><code>onActionOnionSkinToggleColorWash()</code></td>
+</tr>
+<tr>
+<td><code>onActionOnionSkinToggleFramesToDrawingsMode()</code></td>
+</tr>
+<tr>
+<td><code>onActionSetDrawingEnhancedOnionSkin()</code></td>
+</tr>
+<tr>
+<td><code>onActionSetMarksOnionSkinInBetween()</code></td>
+</tr>
+<tr>
+<td><code>onActionSetMarksOnionSkinInBreakdown()</code></td>
+</tr>
+<tr>
+<td><code>onActionSetMarksOnionSkinInKey()</code></td>
+</tr>
+<tr>
+<td><code>onActionToggleOnionSkinForCustomMarkedType(QString)</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="opacitypanel">opacityPanel<a class="headerlink" href="#opacitypanel" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Action</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>onActionCurToPrefPalette()</code></td>
+</tr>
+<tr>
+<td><code>onActionDeleteOpacityTexture()</code></td>
+</tr>
+<tr>
+<td><code>onActionNewOpacityTexture()</code></td>
+</tr>
+<tr>
+<td><code>onActionPrefToCurPalette()</code></td>
+</tr>
+<tr>
+<td><code>onActionRenameOpacityTexture()</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="pencilpanel">pencilPanel<a class="headerlink" href="#pencilpanel" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Action</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>onActionDeletePencilTemplate()</code></td>
+</tr>
+<tr>
+<td><code>onActionNewPencilTemplate()</code></td>
+</tr>
+<tr>
+<td><code>onActionRenamePencilTemplate()</code></td>
+</tr>
+<tr>
+<td><code>onActionShowLargeThumbnail()</code></td>
+</tr>
+<tr>
+<td><code>onActionShowSmallThumbnail()</code></td>
+</tr>
+<tr>
+<td><code>onActionShowStroke()</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="scene">scene<a class="headerlink" href="#scene" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Action</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>onActionChooseInkTool()</code></td>
+</tr>
+<tr>
+<td><code>onActionChooseLineToolInCubicMode()</code></td>
+</tr>
+<tr>
+<td><code>onActionChooseLineToolInNormalMode()</code></td>
+</tr>
+<tr>
+<td><code>onActionChooseLineToolInQuadraticMode()</code></td>
+</tr>
+<tr>
+<td><code>onActionChoosePaintToolInPaintMode()</code></td>
+</tr>
+<tr>
+<td><code>onActionChoosePaintToolInPaintUnpaintedMode()</code></td>
+</tr>
+<tr>
+<td><code>onActionChoosePaintToolInRepaintMode()</code></td>
+</tr>
+<tr>
+<td><code>onActionChoosePaintToolInUnpaintMode()</code></td>
+</tr>
+<tr>
+<td><code>onActionChooseSelectToolInColorMode()</code></td>
+</tr>
+<tr>
+<td><code>onActionChooseSelectToolInNormalMode()</code></td>
+</tr>
+<tr>
+<td><code>onActionChooseStencilBrushToolInOverlayBrushMode()</code></td>
+</tr>
+<tr>
+<td><code>onActionChooseStencilBrushToolInRepaintBrushMode()</code></td>
+</tr>
+<tr>
+<td><code>onActionCreateScene()</code></td>
+</tr>
+<tr>
+<td><code>onActionEditProperties()</code></td>
+</tr>
+<tr>
+<td><code>onActionGotoDrawing1()</code></td>
+</tr>
+<tr>
+<td><code>onActionGotoDrawing10()</code></td>
+</tr>
+<tr>
+<td><code>onActionGotoDrawing2()</code></td>
+</tr>
+<tr>
+<td><code>onActionGotoDrawing3()</code></td>
+</tr>
+<tr>
+<td><code>onActionGotoDrawing4()</code></td>
+</tr>
+<tr>
+<td><code>onActionGotoDrawing5()</code></td>
+</tr>
+<tr>
+<td><code>onActionGotoDrawing6()</code></td>
+</tr>
+<tr>
+<td><code>onActionGotoDrawing7()</code></td>
+</tr>
+<tr>
+<td><code>onActionGotoDrawing8()</code></td>
+</tr>
+<tr>
+<td><code>onActionGotoDrawing9()</code></td>
+</tr>
+<tr>
+<td><code>onActionHideAllControls()</code></td>
+</tr>
+<tr>
+<td><code>onActionHideSelection()</code></td>
+</tr>
+<tr>
+<td><code>onActionInsertControlPointAtFrame()</code></td>
+</tr>
+<tr>
+<td><code>onActionInsertKeyframe()</code></td>
+</tr>
+<tr>
+<td><code>onActionInsertPositionKeyframe()</code></td>
+</tr>
+<tr>
+<td><code>onActionNextColumn()</code></td>
+</tr>
+<tr>
+<td><code>onActionNextDrawing()</code></td>
+</tr>
+<tr>
+<td><code>onActionPreviousColumn()</code></td>
+</tr>
+<tr>
+<td><code>onActionPreviousDrawing()</code></td>
+</tr>
+<tr>
+<td><code>onActionResetAll()</code></td>
+</tr>
+<tr>
+<td><code>onActionResetAllExceptZ()</code></td>
+</tr>
+<tr>
+<td><code>onActionResetTransformation()</code></td>
+</tr>
+<tr>
+<td><code>onActionSelectNextObject()</code></td>
+</tr>
+<tr>
+<td><code>onActionSelectPrevObject()</code></td>
+</tr>
+<tr>
+<td><code>onActionSetConstant()</code></td>
+</tr>
+<tr>
+<td><code>onActionSetKeyFrames()</code></td>
+</tr>
+<tr>
+<td><code>onActionSetNonConstant()</code></td>
+</tr>
+<tr>
+<td><code>onActionShowHidden()</code></td>
+</tr>
+<tr>
+<td><code>onActionShowHideManager()</code></td>
+</tr>
+<tr>
+<td><code>onActionShowSubNode(bool)</code></td>
+</tr>
+<tr>
+<td><code>onActionToggleAutoApply()</code></td>
+</tr>
+<tr>
+<td><code>onActionToggleAutoLock()</code></td>
+</tr>
+<tr>
+<td><code>onActionToggleAutoLockPaletteLists()</code></td>
+</tr>
+<tr>
+<td><code>onActionToggleAutoLockPalettes()</code></td>
+</tr>
+<tr>
+<td><code>onActionToggleContinuity()</code></td>
+</tr>
+<tr>
+<td><code>onActionToggleControl()</code></td>
+</tr>
+<tr>
+<td><code>onActionToggleDrawBehindMode()</code></td>
+</tr>
+<tr>
+<td><code>onActionToggleEnableWrite()</code></td>
+</tr>
+<tr>
+<td><code>onActionToggleLockInTime()</code></td>
+</tr>
+<tr>
+<td><code>onActionToggleNoFBDragging()</code></td>
+</tr>
+<tr>
+<td><code>onActionTogglePegSelectionMode()</code></td>
+</tr>
+<tr>
+<td><code>onActionToggleVelocityEditor()</code></td>
+</tr>
+<tr>
+<td><code>onActionWhatsThis()</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="sceneui">sceneUI<a class="headerlink" href="#sceneui" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Action</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>onActionAbout()</code></td>
+</tr>
+<tr>
+<td><code>onActionActivatePreset(int)</code></td>
+</tr>
+<tr>
+<td><code>onActionAddPeg()</code></td>
+</tr>
+<tr>
+<td><code>onActionAddSound()</code></td>
+</tr>
+<tr>
+<td><code>onActionAddVectorDrawing()</code></td>
+</tr>
+<tr>
+<td><code>onActionAnimatedKeyframeMode()</code></td>
+</tr>
+<tr>
+<td><code>onActionAnimatedOnRangeKeyframeMode()</code></td>
+</tr>
+<tr>
+<td><code>onActionCEIP()</code></td>
+</tr>
+<tr>
+<td><code>onActionCancelSoftRender()</code></td>
+</tr>
+<tr>
+<td><code>onActionCheckFiles()</code></td>
+</tr>
+<tr>
+<td><code>onActionCheckForUpdates()</code></td>
+</tr>
+<tr>
+<td><code>onActionChooseBrushTool()</code></td>
+</tr>
+<tr>
+<td><code>onActionChooseCenterlineEditorTool()</code></td>
+</tr>
+<tr>
+<td><code>onActionChooseCloseGapTool()</code></td>
+</tr>
+<tr>
+<td><code>onActionChooseContourEditorTool()</code></td>
+</tr>
+<tr>
+<td><code>onActionChooseCutterTool()</code></td>
+</tr>
+<tr>
+<td><code>onActionChooseDeformTool()</code></td>
+</tr>
+<tr>
+<td><code>onActionChooseDropperTool()</code></td>
+</tr>
+<tr>
+<td><code>onActionChooseEditTransformTool()</code></td>
+</tr>
+<tr>
+<td><code>onActionChooseEllipseTool()</code></td>
+</tr>
+<tr>
+<td><code>onActionChooseEnvelopeTool()</code></td>
+</tr>
+<tr>
+<td><code>onActionChooseEraserTool()</code></td>
+</tr>
+<tr>
+<td><code>onActionChooseFirstPersonNavigation3dTool()</code></td>
+</tr>
+<tr>
+<td><code>onActionChooseGrabberTool()</code></td>
+</tr>
+<tr>
+<td><code>onActionChooseInkTool()</code></td>
+</tr>
+<tr>
+<td><code>onActionChooseLineTool()</code></td>
+</tr>
+<tr>
+<td><code>onActionChooseMaskBrushTool()</code></td>
+</tr>
+<tr>
+<td><code>onActionChooseMaskEraserTool()</code></td>
+</tr>
+<tr>
+<td><code>onActionChooseMaskSelectorTool()</code></td>
+</tr>
+<tr>
+<td><code>onActionChooseMorphTool()</code></td>
+</tr>
+<tr>
+<td><code>onActionChooseMoveBackgroundTool()</code></td>
+</tr>
+<tr>
+<td><code>onActionChooseNoTool()</code></td>
+</tr>
+<tr>
+<td><code>onActionChoosePaintTool()</code></td>
+</tr>
+<tr>
+<td><code>onActionChoosePaintUnpaintedTool()</code></td>
+</tr>
+<tr>
+<td><code>onActionChoosePencilEditorTool()</code></td>
+</tr>
+<tr>
+<td><code>onActionChoosePencilRetouchTool()</code></td>
+</tr>
+<tr>
+<td><code>onActionChoosePencilTool()</code></td>
+</tr>
+<tr>
+<td><code>onActionChoosePerspectiveTool()</code></td>
+</tr>
+<tr>
+<td><code>onActionChoosePivotTool()</code></td>
+</tr>
+<tr>
+<td><code>onActionChoosePolylineTool()</code></td>
+</tr>
+<tr>
+<td><code>onActionChooseRectangleTool()</code></td>
+</tr>
+<tr>
+<td><code>onActionChooseRepaintTool()</code></td>
+</tr>
+<tr>
+<td><code>onActionChooseRepositionAllDrawingsTool()</code></td>
+</tr>
+<tr>
+<td><code>onActionChooseResizePenStyleTool()</code></td>
+</tr>
+<tr>
+<td><code>onActionChooseRotateTool()</code></td>
+</tr>
+<tr>
+<td><code>onActionChooseSelectTool()</code></td>
+</tr>
+<tr>
+<td><code>onActionChooseShiftAndTraceTool()</code></td>
+</tr>
+<tr>
+<td><code>onActionChooseSpInverseKinematicsTool()</code></td>
+</tr>
+<tr>
+<td><code>onActionChooseSpMaintainSizeTool()</code></td>
+</tr>
+<tr>
+<td><code>onActionChooseSpMotionCapture()</code></td>
+</tr>
+<tr>
+<td><code>onActionChooseSpOffsetZTool()</code></td>
+</tr>
+<tr>
+<td><code>onActionChooseSpRepositionTool()</code></td>
+</tr>
+<tr>
+<td><code>onActionChooseSpRotateTool()</code></td>
+</tr>
+<tr>
+<td><code>onActionChooseSpScaleTool()</code></td>
+</tr>
+<tr>
+<td><code>onActionChooseSpSelectTool()</code></td>
+</tr>
+<tr>
+<td><code>onActionChooseSpSkewTool()</code></td>
+</tr>
+<tr>
+<td><code>onActionChooseSpSmoothEditingTool()</code></td>
+</tr>
+<tr>
+<td><code>onActionChooseSpSplineOffsetTool()</code></td>
+</tr>
+<tr>
+<td><code>onActionChooseSpTransformTool()</code></td>
+</tr>
+<tr>
+<td><code>onActionChooseSpTranslateTool()</code></td>
+</tr>
+<tr>
+<td><code>onActionChooseStampTool()</code></td>
+</tr>
+<tr>
+<td><code>onActionChooseStencilBrushTool()</code></td>
+</tr>
+<tr>
+<td><code>onActionChooseStrokeTool()</code></td>
+</tr>
+<tr>
+<td><code>onActionChooseTextTool()</code></td>
+</tr>
+<tr>
+<td><code>onActionChooseTextureDropperTool()</code></td>
+</tr>
+<tr>
+<td><code>onActionChooseThirdPersonNavigation3dTool()</code></td>
+</tr>
+<tr>
+<td><code>onActionChooseUnpaintTool()</code></td>
+</tr>
+<tr>
+<td><code>onActionChooseZoomTool()</code></td>
+</tr>
+<tr>
+<td><code>onActionCleanBackups()</code></td>
+</tr>
+<tr>
+<td><code>onActionCleanDrawings()</code></td>
+</tr>
+<tr>
+<td><code>onActionCleanPaletteLists()</code></td>
+</tr>
+<tr>
+<td><code>onActionClearRecentSceneList()</code></td>
+</tr>
+<tr>
+<td><code>onActionCloseAndReopenScene(QString,QString,QString,QString)</code></td>
+</tr>
+<tr>
+<td><code>onActionCloseScene()</code></td>
+</tr>
+<tr>
+<td><code>onActionCloseSceneDelayed()</code></td>
+</tr>
+<tr>
+<td><code>onActionCloseThenReopen()</code></td>
+</tr>
+<tr>
+<td><code>onActionComposite()</code></td>
+</tr>
+<tr>
+<td><code>onActionCompositeBatchOnly()</code></td>
+</tr>
+<tr>
+<td><code>onActionConformationImport()</code></td>
+</tr>
+<tr>
+<td><code>onActionCreateFullImport()</code></td>
+</tr>
+<tr>
+<td><code>onActionDeleteVersions()</code></td>
+</tr>
+<tr>
+<td><code>onActionExit()</code></td>
+</tr>
+<tr>
+<td><code>onActionExitDelayed()</code></td>
+</tr>
+<tr>
+<td><code>onActionFLVExport()</code></td>
+</tr>
+<tr>
+<td><code>onActionFlashExport()</code></td>
+</tr>
+<tr>
+<td><code>onActionFullscreen()</code></td>
+</tr>
+<tr>
+<td><code>onActionHelp()</code></td>
+</tr>
+<tr>
+<td><code>onActionHtmlHelp(QString)</code></td>
+</tr>
+<tr>
+<td><code>onActionImport3dmodels()</code></td>
+</tr>
+<tr>
+<td><code>onActionImportDrawings()</code></td>
+</tr>
+<tr>
+<td><code>onActionImportLocalLibrary()</code></td>
+</tr>
+<tr>
+<td><code>onActionImportSound()</code></td>
+</tr>
+<tr>
+<td><code>onActionImportTimings()</code></td>
+</tr>
+<tr>
+<td><code>onActionJogBackward()</code></td>
+</tr>
+<tr>
+<td><code>onActionJogForward()</code></td>
+</tr>
+<tr>
+<td><code>onActionLockScene()</code></td>
+</tr>
+<tr>
+<td><code>onActionLockSceneVersion()</code></td>
+</tr>
+<tr>
+<td><code>onActionMacroManager()</code></td>
+</tr>
+<tr>
+<td><code>onActionMainGotoFirstFrame()</code></td>
+</tr>
+<tr>
+<td><code>onActionMainGotoFrame()</code></td>
+</tr>
+<tr>
+<td><code>onActionMainGotoLastFrame()</code></td>
+</tr>
+<tr>
+<td><code>onActionMainGotoNextFrame()</code></td>
+</tr>
+<tr>
+<td><code>onActionMainGotoPreviousFrame()</code></td>
+</tr>
+<tr>
+<td><code>onActionMainPlay()</code></td>
+</tr>
+<tr>
+<td><code>onActionMainPlayBw()</code></td>
+</tr>
+<tr>
+<td><code>onActionMainPlayFw()</code></td>
+</tr>
+<tr>
+<td><code>onActionMainPlayPreviewFw()</code></td>
+</tr>
+<tr>
+<td><code>onActionMainPlayPreviewSwf()</code></td>
+</tr>
+<tr>
+<td><code>onActionMainSetPlaybackSpeed()</code></td>
+</tr>
+<tr>
+<td><code>onActionMainSetPlaybackStartFrame()</code></td>
+</tr>
+<tr>
+<td><code>onActionMainSetPlaybackStopFrame()</code></td>
+</tr>
+<tr>
+<td><code>onActionMainStopPlaying()</code></td>
+</tr>
+<tr>
+<td><code>onActionMainToggleEnableCacheForPlay()</code></td>
+</tr>
+<tr>
+<td><code>onActionMainToggleEnableSoundForPlay()</code></td>
+</tr>
+<tr>
+<td><code>onActionMainToggleEnableSoundScrubbing()</code></td>
+</tr>
+<tr>
+<td><code>onActionMainToggleLoopPlay()</code></td>
+</tr>
+<tr>
+<td><code>onActionManageLocalCaches()</code></td>
+</tr>
+<tr>
+<td><code>onActionMmxExport()</code></td>
+</tr>
+<tr>
+<td><code>onActionMmxImport()</code></td>
+</tr>
+<tr>
+<td><code>onActionNewScene()</code></td>
+</tr>
+<tr>
+<td><code>onActionNewSceneDelayed()</code></td>
+</tr>
+<tr>
+<td><code>onActionNewView(QString)</code></td>
+</tr>
+<tr>
+<td><code>onActionNewView(int)</code></td>
+</tr>
+<tr>
+<td><code>onActionNewViewChecked(QString)</code></td>
+</tr>
+<tr>
+<td><code>onActionOpen()</code></td>
+</tr>
+<tr>
+<td><code>onActionOpenBackgroundFile()</code></td>
+</tr>
+<tr>
+<td><code>onActionOpenDelayed()</code></td>
+</tr>
+<tr>
+<td><code>onActionOpenDrawings()</code></td>
+</tr>
+<tr>
+<td><code>onActionOpenDrawingsDelayed()</code></td>
+</tr>
+<tr>
+<td><code>onActionOpenDrawingsModify()</code></td>
+</tr>
+<tr>
+<td><code>onActionOpenElements()</code></td>
+</tr>
+<tr>
+<td><code>onActionOpenElementsDelayed()</code></td>
+</tr>
+<tr>
+<td><code>onActionOpenHelpExtendedScriptingInterface()</code></td>
+</tr>
+<tr>
+<td><code>onActionOpenHelpPythonInterface()</code></td>
+</tr>
+<tr>
+<td><code>onActionOpenHelpScriptNode()</code></td>
+</tr>
+<tr>
+<td><code>onActionOpenHelpScriptingInterface()</code></td>
+</tr>
+<tr>
+<td><code>onActionOpenScene()</code></td>
+</tr>
+<tr>
+<td><code>onActionOpenScene(QString)</code></td>
+</tr>
+<tr>
+<td><code>onActionOpenSceneDelayed()</code></td>
+</tr>
+<tr>
+<td><code>onActionOpenURL(QString)</code></td>
+</tr>
+<tr>
+<td><code>onActionOpenURL(QString,int)</code></td>
+</tr>
+<tr>
+<td><code>onActionPaintModeLogView()</code></td>
+</tr>
+<tr>
+<td><code>onActionPaintModeModelView()</code></td>
+</tr>
+<tr>
+<td><code>onActionPaintModePaletteManager()</code></td>
+</tr>
+<tr>
+<td><code>onActionPaintModeToolPropertiesView()</code></td>
+</tr>
+<tr>
+<td><code>onActionPaletteOperations()</code></td>
+</tr>
+<tr>
+<td><code>onActionPerformFullImport()</code></td>
+</tr>
+<tr>
+<td><code>onActionPerformPartialImport()</code></td>
+</tr>
+<tr>
+<td><code>onActionPerformPartialUpdate()</code></td>
+</tr>
+<tr>
+<td><code>onActionPreComp()</code></td>
+</tr>
+<tr>
+<td><code>onActionRaiseArea(QString)</code></td>
+</tr>
+<tr>
+<td><code>onActionRaiseArea(QString,bool)</code></td>
+</tr>
+<tr>
+<td><code>onActionReadChangedDrawings()</code></td>
+</tr>
+<tr>
+<td><code>onActionReadChangedDrawingsNoWarning()</code></td>
+</tr>
+<tr>
+<td><code>onActionRedo()</code></td>
+</tr>
+<tr>
+<td><code>onActionRedo(int)</code></td>
+</tr>
+<tr>
+<td><code>onActionReportIssue()</code></td>
+</tr>
+<tr>
+<td><code>onActionResetBackgroundPosition()</code></td>
+</tr>
+<tr>
+<td><code>onActionReshapeMultipleKeyframes()</code></td>
+</tr>
+<tr>
+<td><code>onActionRestoreDefaultLayout()</code></td>
+</tr>
+<tr>
+<td><code>onActionSaveAndPublish()</code></td>
+</tr>
+<tr>
+<td><code>onActionSaveAsDialog()</code></td>
+</tr>
+<tr>
+<td><code>onActionSaveAsScene()</code></td>
+</tr>
+<tr>
+<td><code>onActionSaveDialog()</code></td>
+</tr>
+<tr>
+<td><code>onActionSaveEverything()</code></td>
+</tr>
+<tr>
+<td><code>onActionSaveEverythingIncludingSceneMachineFrames()</code></td>
+</tr>
+<tr>
+<td><code>onActionSaveLayoutInScene()</code></td>
+</tr>
+<tr>
+<td><code>onActionSaveLayouts()</code></td>
+</tr>
+<tr>
+<td><code>onActionSaveOpenGLFrames()</code></td>
+</tr>
+<tr>
+<td><code>onActionSaveVersion()</code></td>
+</tr>
+<tr>
+<td><code>onActionSaveWorkspaceAs()</code></td>
+</tr>
+<tr>
+<td><code>onActionScaleBackgroundDown()</code></td>
+</tr>
+<tr>
+<td><code>onActionScaleBackgroundUp()</code></td>
+</tr>
+<tr>
+<td><code>onActionScanDrawings()</code></td>
+</tr>
+<tr>
+<td><code>onActionScriptedCloseAndReopenScene(QString,QString,QString,QString,int)</code></td>
+</tr>
+<tr>
+<td><code>onActionSetAllKeyframesMode()</code></td>
+</tr>
+<tr>
+<td><code>onActionSetConstantSegMode()</code></td>
+</tr>
+<tr>
+<td><code>onActionSetDefaultDisplay(QString)</code></td>
+</tr>
+<tr>
+<td><code>onActionSetDrawingMarksFlipBreakdown()</code></td>
+</tr>
+<tr>
+<td><code>onActionSetDrawingMarksFlipInBetween()</code></td>
+</tr>
+<tr>
+<td><code>onActionSetDrawingMarksFlipKey()</code></td>
+</tr>
+<tr>
+<td><code>onActionSetKeyframeMode()</code></td>
+</tr>
+<tr>
+<td><code>onActionSetLayout(QString,int)</code></td>
+</tr>
+<tr>
+<td><code>onActionSetTempoMarker()</code></td>
+</tr>
+<tr>
+<td><code>onActionShowAiCredits()</code></td>
+</tr>
+<tr>
+<td><code>onActionShowAiEULA()</code></td>
+</tr>
+<tr>
+<td><code>onActionShowCurrentDrawingOnTop()</code></td>
+</tr>
+<tr>
+<td><code>onActionShowLatestNews()</code></td>
+</tr>
+<tr>
+<td><code>onActionShowLayoutManager()</code></td>
+</tr>
+<tr>
+<td><code>onActionShowLicense()</code></td>
+</tr>
+<tr>
+<td><code>onActionShowPreferenceDialog()</code></td>
+</tr>
+<tr>
+<td><code>onActionShowReadme()</code></td>
+</tr>
+<tr>
+<td><code>onActionShowShortcutsDialog()</code></td>
+</tr>
+<tr>
+<td><code>onActionShowWelcomeScreen()</code></td>
+</tr>
+<tr>
+<td><code>onActionShowWelcomeScreenQuit()</code></td>
+</tr>
+<tr>
+<td><code>onActionShuttleBackward()</code></td>
+</tr>
+<tr>
+<td><code>onActionShuttleForward()</code></td>
+</tr>
+<tr>
+<td><code>onActionShuttleReset()</code></td>
+</tr>
+<tr>
+<td><code>onActionSingleFlip()</code></td>
+</tr>
+<tr>
+<td><code>onActionSoundtrackExport()</code></td>
+</tr>
+<tr>
+<td><code>onActionStaticKeyframeMode()</code></td>
+</tr>
+<tr>
+<td><code>onActionTerminate()</code></td>
+</tr>
+<tr>
+<td><code>onActionToggleBBoxHighlighting()</code></td>
+</tr>
+<tr>
+<td><code>onActionToggleDebugMode()</code></td>
+</tr>
+<tr>
+<td><code>onActionToggleFlipForCustomMarkedType(QString)</code></td>
+</tr>
+<tr>
+<td><code>onActionToggleKeyframeMode()</code></td>
+</tr>
+<tr>
+<td><code>onActionTogglePersViewPlayback()</code></td>
+</tr>
+<tr>
+<td><code>onActionToggleRenderer()</code></td>
+</tr>
+<tr>
+<td><code>onActionToggleShowLockedDrawingsInOutline()</code></td>
+</tr>
+<tr>
+<td><code>onActionToggleShowMergeSelectionDialog()</code></td>
+</tr>
+<tr>
+<td><code>onActionToggleShowScanDialog()</code></td>
+</tr>
+<tr>
+<td><code>onActionToggleSideViewPlayback()</code></td>
+</tr>
+<tr>
+<td><code>onActionToggleToolBar(QString)</code></td>
+</tr>
+<tr>
+<td><code>onActionToggleTopViewPlayback()</code></td>
+</tr>
+<tr>
+<td><code>onActionUndo()</code></td>
+</tr>
+<tr>
+<td><code>onActionUndo(int)</code></td>
+</tr>
+<tr>
+<td><code>onActionUnloadBackground()</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="scriptresponder">scriptResponder<a class="headerlink" href="#scriptresponder" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Action</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>onActionActivateTool(int)</code></td>
+</tr>
+<tr>
+<td><code>onActionActivateToolByName(QString)</code></td>
+</tr>
+<tr>
+<td><code>onActionExecuteScript(QString)</code></td>
+</tr>
+<tr>
+<td><code>onActionExecuteScriptWithValidator(QString,AC_ActionInfo*)</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="sessionresponder">sessionResponder<a class="headerlink" href="#sessionresponder" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Action</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>onActionFixSymbolCompositeAndDisplay()</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="texturepanel">texturePanel<a class="headerlink" href="#texturepanel" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Action</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>onActionAddTexture()</code></td>
+</tr>
+<tr>
+<td><code>onActionDeleteTexture()</code></td>
+</tr>
+<tr>
+<td><code>onActionExportTextures()</code></td>
+</tr>
+<tr>
+<td><code>onActionImportTextures()</code></td>
+</tr>
+<tr>
+<td><code>onActionRenameTexture()</code></td>
+</tr>
+<tr>
+<td><code>onActionShowLargeThumbnail()</code></td>
+</tr>
+<tr>
+<td><code>onActionShowListView()</code></td>
+</tr>
+<tr>
+<td><code>onActionShowSmallThumbnail()</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="timelineview">timelineView<a class="headerlink" href="#timelineview" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Action</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>onActionPropagateLayerSelection()</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="toolproperties">toolProperties<a class="headerlink" href="#toolproperties" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Action</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>onActionDeleteBrush()</code></td>
+</tr>
+<tr>
+<td><code>onActionEditBrush()</code></td>
+</tr>
+<tr>
+<td><code>onActionExportBrushes()</code></td>
+</tr>
+<tr>
+<td><code>onActionImportBrushes()</code></td>
+</tr>
+<tr>
+<td><code>onActionNewBrush()</code></td>
+</tr>
+<tr>
+<td><code>onActionRenameBrush()</code></td>
+</tr>
+<tr>
+<td><code>onActionShowLargeThumbnail()</code></td>
+</tr>
+<tr>
+<td><code>onActionShowSmallThumbnail()</code></td>
+</tr>
+<tr>
+<td><code>onActionShowStroke()</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="xsheetview">xsheetView<a class="headerlink" href="#xsheetview" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Action</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>onActionDisplayShowDlg()</code></td>
+</tr>
+<tr>
+<td><code>onActionPrintXsheet()</code></td>
+</tr>
+<tr>
+<td><code>onActionResetCellsSize()</code></td>
+</tr>
+<tr>
+<td><code>onActionResetPan()</code></td>
+</tr>
+<tr>
+<td><code>onActionResetView()</code></td>
+</tr>
+<tr>
+<td><code>onActionResetZoom()</code></td>
+</tr>
+<tr>
+<td><code>onActionSelectedElementSwapToNextDrawing()</code></td>
+</tr>
+<tr>
+<td><code>onActionSelectedElementSwapToPrevDrawing()</code></td>
+</tr>
+<tr>
+<td><code>onActionSendToFunctionView()</code></td>
+</tr>
+<tr>
+<td><code>onActionShowUnhideObjectsEditor()</code></td>
+</tr>
+<tr>
+<td><code>onActionTag()</code></td>
+</tr>
+<tr>
+<td><code>onActionTagPublic()</code></td>
+</tr>
+<tr>
+<td><code>onActionToggleGesturalDrag()</code></td>
+</tr>
+<tr>
+<td><code>onActionToggleInsertMode()</code></td>
+</tr>
+<tr>
+<td><code>onActionToggleIsShow3dRotationCols()</code></td>
+</tr>
+<tr>
+<td><code>onActionToggleIsShowDrawingCols()</code></td>
+</tr>
+<tr>
+<td><code>onActionToggleIsShowFunctionCols()</code></td>
+</tr>
+<tr>
+<td><code>onActionToggleIsShowPath3dCols()</code></td>
+</tr>
+<tr>
+<td><code>onActionToggleIsShowSoundCols()</code></td>
+</tr>
+<tr>
+<td><code>onActionToggleMinimalHeaders()</code></td>
+</tr>
+<tr>
+<td><code>onActionToggleSelection()</code></td>
+</tr>
+<tr>
+<td><code>onActionToggleShowGrouping()</code></td>
+</tr>
+<tr>
+<td><code>onActionToggleSidePanel()</code></td>
+</tr>
+<tr>
+<td><code>onActionToggleThumbnails()</code></td>
+</tr>
+<tr>
+<td><code>onActionUnhideAllColumns()</code></td>
+</tr>
+<tr>
+<td><code>onActionUntag()</code></td>
+</tr>
+<tr>
+<td><code>onActionUntagAllOthers()</code></td>
+</tr>
+<tr>
+<td><code>onActionUntagPublic()</code></td>
+</tr>
+<tr>
+<td><code>onActionUntagPublicAllOthers()</code></td>
+</tr>
+<tr>
+<td><code>onActionXsheetEmptyCellsX(int)</code></td>
+</tr>
+<tr>
+<td><code>onActionXsheetHeldFramesLine(int)</code></td>
+</tr>
+<tr>
+<td><code>onActionXsheetHoldValueMenu(int)</code></td>
+</tr>
+<tr>
+<td><code>onActionXsheetLabelsFrames(int)</code></td>
+</tr>
+<tr>
+<td><code>onActionZoomExtents()</code></td>
+</tr>
+<tr>
+<td><code>onActionZoomIn()</code></td>
+</tr>
+<tr>
+<td><code>onActionZoomOut()</code></td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": ".", "features": ["navigation.sections", "content.code.copy", "toc.follow"], "search": "assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>

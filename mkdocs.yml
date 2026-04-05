@@ -1,6 +1,7 @@
 site_name: Python-Harmony Documentation  # Nombre de tu web
 site_url: https://naililian.github.io/
 repo_url: https://github.com/naililian/naililian.github.io
+use_directory_urls: false
 
 theme:
   name: material  # El mejor tema para documentación técnica
@@ -38,4 +39,4 @@ extra_css:
 nav:
   - Inicio: index.md
   - Utils: api.md # Aquí es donde se "rellenará" el código automáticamente
-  - Python Harmony: https://naililian.github.io/python-harmony/
+  - Python Harmony: https://naililian.github.io/python-harmony/index.html

@@ -1,0 +1,9 @@
+/* Widen main content area */
+.md-grid {
+  max-width: 1400px;
+}
+
+/* Optional: Adjust content width */
+.md-main__inner {
+  max-width: 1400px;
+}

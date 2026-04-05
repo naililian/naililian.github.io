@@ -1,6 +1,7 @@
 site_name: Python Harmony Documentation
 site_url: https://naililian.github.io/python-harmony/
 repo_url: https://github.com/naililian/naililian.github.io
+use_directory_urls: false
 
 theme:
   name: material
